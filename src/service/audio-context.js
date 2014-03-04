@@ -1,7 +1,5 @@
 'use strict';
 
-// similar attempt https://github.com/cwilso/AudioContext-MonkeyPatch/
-
 function AudioContextService(options) {
     this._audioContext = options.audioContext;
     this.format = options.format;
