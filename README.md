@@ -31,4 +31,3 @@ This module does not yet support all features specified by the W3C. Currently su
 The original specification can be found here: http://www.w3.org/TR/webaudio/
 
 In case you are missing a feature just fork or raise an issue.
-                        
