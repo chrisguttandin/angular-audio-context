@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "main": "src/module.js",
-  "name": "angular-audio-contextt",
+  "name": "angular-audio-context",
   "napa": {
     "angular": "angular/bower-angular",
     "angular-mocks": "angular/bower-angular-mocks"
