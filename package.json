@@ -28,6 +28,10 @@
     "angular": "angular/bower-angular",
     "angular-mocks": "angular/bower-angular-mocks"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisguttandin/angular-audio-context.git"
+  },
   "scripts": {
     "test": "grunt test"
   },
