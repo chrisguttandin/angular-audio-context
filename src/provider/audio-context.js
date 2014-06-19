@@ -9,7 +9,7 @@ var audioContext,
     AudioContextService = require('../service/audio-context.js');
 
 function AudioContextServiceProvider() {
-        format,
+    var format,
         isSupported;
 
     if (audioContext === undefined) {
@@ -25,8 +25,10 @@ function AudioContextServiceProvider() {
     isSupported = (audioContext !== null);
 
     if (isSupported) {
-        // this assumes that every browser with an AudioContext has an Audio element, too
+        // This assumes that every browser with an AudioContext has an Audio element, too.
         format = !!(new window.Audio()).canPlayType('audio/ogg') ? 'ogg' : 'mp3';
+    } else {
+        format = null;
     }
 
     this.isSupported = isSupported;
