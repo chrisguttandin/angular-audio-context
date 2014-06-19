@@ -1,20 +1,26 @@
 'use strict';
 
-var AudioContextService = require('../service/audio-context.js')
+// If you use this module within yout tests it can happen that you create a lot of AudioContexts.
+// This might fail, depending on your browser. Chrome for example throws something like this:
+// Failed to construct 'AudioContext': number of hardware contexts reached maximum (6). Therefore
+// only one AudioContext is created by this module and cached internally.
+
+var audioContext,
+    AudioContextService = require('../service/audio-context.js');
 
 function AudioContextServiceProvider() {
-    var audioContext,
         format,
         isSupported;
 
-    // it is not possible to use AngularJS' $window service, because it is not available for providers
-    audioContext = (window.hasOwnProperty('AudioContext')) ?
-        new window.AudioContext() :
-        (window.hasOwnProperty('webkitAudioContext')) ?
-            new window.webkitAudioContext() :
-            null;
-
-    format = null;
+    if (audioContext === undefined) {
+        // It is not possible to use AngularJS' $window service here, because it is not available
+        // for providers.
+        audioContext = (window.hasOwnProperty('AudioContext')) ?
+            new window.AudioContext() :
+            (window.hasOwnProperty('webkitAudioContext')) ?
+                new window.webkitAudioContext() :
+                null;
+    }
 
     isSupported = (audioContext !== null);
 
