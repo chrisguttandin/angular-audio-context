@@ -31,13 +31,13 @@ function AudioContextServiceProvider() {
 
     this.isSupported = isSupported;
 
-    this.$get = function($window) {
+    this.$get = function ($window) {
         return new AudioContextService({
             audioContext: audioContext,
             format: format,
             isSupported: isSupported
         });
     };
-};
+}
 
 module.exports = AudioContextServiceProvider;
