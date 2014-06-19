@@ -32,4 +32,19 @@ This module does not yet support all features specified by the W3C. Currently su
 
 The original specification can be found here: http://www.w3.org/TR/webaudio/
 
+In addition to that the audioContextService provides an extra property called isSupported. It is a
+boolean value that indicates if the currently used browser supports Web Audio API's AudioContext or
+not. An example usage might look like this:
+
+    angular
+        .module('your-module', [])
+        .config(function (audioContextServiceProvider) {
+            $provide.constant('audioContextIsSupported', audioContextServiceProvider.isSupported);
+        })
+        .controller('YourController', ['audioContextIsSupported', function (audioContextIsSupported) {
+            // use audioContextIsSupported here ...
+        });
+
+    <span data-ng-if="!audioContextIsSupported">Sorry AudioContext is not supported.</span>
+
 In case you are missing a feature just fork or raise an issue.
