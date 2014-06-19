@@ -38,7 +38,7 @@ not. An example usage might look like this:
 
     angular
         .module('your-module', [])
-        .config(function (audioContextServiceProvider) {
+        .config(function (audioContextServiceProvider, $provide) {
             $provide.constant('audioContextIsSupported', audioContextServiceProvider.isSupported);
         })
         .controller('YourController', ['audioContextIsSupported', function (audioContextIsSupported) {
