@@ -1,6 +1,6 @@
 'use strict';
 
-// If you use this module within yout tests it can happen that you create a lot of AudioContexts.
+// If you use this module within your tests it can happen that you create a lot of AudioContexts.
 // This might fail, depending on your browser. Chrome for example throws something like this:
 // Failed to construct 'AudioContext': number of hardware contexts reached maximum (6). Therefore
 // only one AudioContext is created by this module and cached internally.
