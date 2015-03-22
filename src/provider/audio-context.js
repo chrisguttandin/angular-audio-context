@@ -6,7 +6,23 @@
 // only one AudioContext is created by this module and cached internally.
 
 var audioContext,
-    AudioContextService = require('../service/audio-context.js');
+    AudioContextService = require('../service/audio-context.js'),
+    // stolen from Modernizr
+    // https://github.com/Modernizr/Modernizr/blob/master/feature-detects/es6/promises.js
+    isSupportingPromises = ('Promise' in window &&
+        'resolve' in window.Promise &&
+        'reject' in window.Promise &&
+        'all' in window.Promise &&
+        'race' in window.Promise &&
+        (function() {
+            var resolve;
+
+            new window.Promise(function (r) {
+                resolve = r;
+            });
+
+            return typeof resolve === 'function';
+        }()));
 
 function AudioContextServiceProvider() {
     var format,
@@ -22,7 +38,7 @@ function AudioContextServiceProvider() {
                 null;
     }
 
-    isSupported = (audioContext !== null);
+    isSupported = (audioContext !== null) && isSupportingPromises;
 
     if (isSupported) {
         // This assumes that every browser with an AudioContext has an Audio element, too.
