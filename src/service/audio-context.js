@@ -26,6 +26,10 @@ Object.defineProperty(AudioContextService.prototype, 'isSupported', {
     writable: true
 });
 
+AudioContextService.prototype.createBiquadFilter = function () {
+    return this._audioContext.createBiquadFilter();
+};
+
 AudioContextService.prototype.createBuffer = function (numberOfChannels, length, sampleRate) {
     return this._audioContext.createBuffer(numberOfChannels, length, sampleRate);
 };
