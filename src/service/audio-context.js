@@ -5,7 +5,7 @@ function AudioContextService(options) {
     this.format = options.format;
     this.isSupported = options.isSupported;
     try {
-        this._isSupportingPromises = (this._audioContext.decodeAudioData(new Uint8Array(1)) !== undefined);
+        this._isSupportingPromises = (this._audioContext.decodeAudioData(new ArrayBuffer(0), function () {}) !== undefined);
     } catch (err) {
         this._isSupportingPromises = false;
     }

@@ -1,25 +1,35 @@
 'use strict';
 
+var browserify = require('../../package.json').browserify;
+
 module.exports = function (config) {
 
     config.set({
 
-        autoWatch: true,
+        basePath: '../../',
 
         browserify: {
-            watch: true
+            transform: browserify.transform
         },
 
         browsers: [
+            'Chrome',
             'ChromeCanary',
-            'Firefox'
+            'Firefox',
+            'FirefoxAurora'
         ],
 
         files: [
-            '../../node_modules/angular/angular.js',
-            '../../node_modules/angular-mocks/angular-mocks.js',
-            '../../src/module.js',
-            '../../test/**/*.js'
+            'node_modules/angular/angular.js',
+            'node_modules/angular-mocks/angular-mocks.js',
+            'src/module.js',
+            {
+                included: false,
+                pattern: 'test/fixtures/**',
+                served: true,
+                watched: true,
+            },
+            'test/unit/**/*.js'
         ],
 
         frameworks: [
@@ -29,12 +39,9 @@ module.exports = function (config) {
         ],
 
         preprocessors: {
-            '../../src/module.js': [
-                'browserify'
-            ]
-        },
-
-        singleRun: false
+            'src/module.js': 'browserify',
+            'test/unit/**/*.js': 'browserify'
+        }
 
     });
 
