@@ -15,14 +15,6 @@ describe('audioContextService', function () {
         audioContextService = $injector.get('audioContextService');
     }));
 
-    describe('destination', function () {
-
-        it('should be an instance of AudioDestinationNode', function () {
-            expect(audioContextService.destination).to.be.an.instanceOf(AudioDestinationNode);
-        });
-
-    });
-
     describe('currentTime', function () {
 
         it('should be a number', function () {
@@ -37,6 +29,14 @@ describe('audioContextService', function () {
 
                 done();
             }, 100);
+        });
+
+    });
+
+    describe('destination', function () {
+
+        it('should be an instance of AudioDestinationNode', function () {
+            expect(audioContextService.destination).to.be.an.instanceOf(AudioDestinationNode);
         });
 
     });
