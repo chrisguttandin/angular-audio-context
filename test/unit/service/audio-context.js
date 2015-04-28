@@ -109,6 +109,34 @@ describe('audioContextService', function () {
 
     });
 
+    describe('createChannelMerger()', function () {
+
+        it('should return an instance of ChannelMergerNode', function () {
+            expect(audioContextService.createChannelMerger(2)).to.be.an.instanceOf(ChannelMergerNode);
+        });
+
+        it('should return a channelMergerNode with the given parameters', function () {
+            var channelMergerNode = audioContextService.createChannelMerger(2);
+
+            expect(channelMergerNode.numberOfInputs).to.equal(2);
+        });
+
+    });
+
+    describe('createChannelSplitter()', function () {
+
+        it('should return an instance of ChannelSplitterNode', function () {
+            expect(audioContextService.createChannelSplitter(2)).to.be.an.instanceOf(ChannelSplitterNode);
+        });
+
+        it('should return a channelSplitterNode with the given parameters', function () {
+            var channelSplitterNode = audioContextService.createChannelSplitter(2);
+
+            expect(channelSplitterNode.numberOfOutputs).to.equal(2);
+        });
+
+    });
+
     describe('decodeAudioData()', function () {
 
         it('should return a promise', function () {

@@ -107,6 +107,14 @@ AudioContextService.prototype.createBufferSource = function () {
     return bufferSource;
 };
 
+AudioContextService.prototype.createChannelMerger = function (numberOfInputs) {
+    return this._audioContext.createChannelMerger(numberOfInputs);
+};
+
+AudioContextService.prototype.createChannelSplitter = function (numberOfOutputs) {
+    return this._audioContext.createChannelSplitter(numberOfOutputs);
+};
+
 AudioContextService.prototype.createGain = function () {
     return this._audioContext.createGain();
 };
