@@ -56,6 +56,8 @@ function AudioContextServiceProvider() {
             isSupported: isSupported
         });
     };
+
+    this.$get.$inject = ['$window'];
 }
 
 module.exports = AudioContextServiceProvider;
