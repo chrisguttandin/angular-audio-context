@@ -7,6 +7,9 @@ Besides being a wrapper this module also patches the deprecated and prefixed ver
 there. If you don't care about the AngularJS wrapper you might be interested in a similar attempt
 which can be found here: https://github.com/cwilso/AudioContext-MonkeyPatch/
 
+There is also module called [ngWebAudio](https://github.com/nehz/ngWebAudio) which tries to simplify
+the buffering and playback of a single audio file by utilizing the Web Audio API.
+
 This module is intended to be used with browserify like this:
 
     var audioContext = require('angular-audio-context');
