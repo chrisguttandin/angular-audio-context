@@ -51,3 +51,6 @@ not. An example usage might look like this:
     <span data-ng-if="!audioContextIsSupported">Sorry AudioContext is not supported.</span>
 
 In case you are missing a feature just fork or raise an issue.
+
+The naming tries to align with the recommendations given in the
+[Specification for reusable AngularJS components](https://github.com/angular/angular-component-spec).
