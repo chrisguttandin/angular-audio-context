@@ -1,7 +1,6 @@
-angular-audio-context
-=====================
+# angular-audio-context
 
-An AngularJS wrapper for Web Audio API's AudioContext.
+**An AngularJS wrapper for Web Audio API's AudioContext.**
 
 Besides being a wrapper this module also patches the deprecated and prefixed versions which are out
 there. If you don't care about the AngularJS wrapper you might be interested in a similar attempt
@@ -12,15 +11,17 @@ the buffering and playback of a single audio file by utilizing the Web Audio API
 
 This module is intended to be used with browserify like this:
 
-    var audioContext = require('angular-audio-context');
+```js
+var audioContext = require('angular-audio-context');
 
-    angular
-      .module('my-app', [audioContext.name])
-      .controller('ExampleCtrl', ['audioContextService', function (audioContextService) {
+angular
+  .module('my-app', [audioContext.name])
+  .controller('ExampleCtrl', ['audioContextService', function (audioContextService) {
 
-        // do something with the audioContextService instance ...
+    // do something with the audioContextService instance ...
 
-    }]);
+}]);
+```
 
 This module does not yet support all features specified by the W3C. Currently supported features are:
 
@@ -39,16 +40,20 @@ In addition to that the audioContextService provides an extra property called is
 boolean value that indicates if the currently used browser supports Web Audio API's AudioContext or
 not. An example usage might look like this:
 
-    angular
-        .module('your-module', [])
-        .config(function (audioContextServiceProvider, $provide) {
-            $provide.constant('audioContextIsSupported', audioContextServiceProvider.isSupported);
-        })
-        .controller('YourController', ['audioContextIsSupported', function (audioContextIsSupported) {
-            // use audioContextIsSupported here ...
-        });
+```js
+angular
+    .module('your-module', [])
+    .config(function (audioContextServiceProvider, $provide) {
+        $provide.constant('audioContextIsSupported', audioContextServiceProvider.isSupported);
+    })
+    .controller('YourController', ['audioContextIsSupported', function (audioContextIsSupported) {
+        // use audioContextIsSupported here ...
+    });
+```
 
-    <span data-ng-if="!audioContextIsSupported">Sorry AudioContext is not supported.</span>
+```html
+<span data-ng-if="!audioContextIsSupported">Sorry AudioContext is not supported.</span>
+```
 
 In case you are missing a feature just fork or raise an issue.
 
