@@ -8,37 +8,35 @@
   "browserify-shim": {
     "angular": "global:angular"
   },
+  "dependencies": {
+    "browserify": "^12.0.1"
+  },
   "description": "An AngularJS wrapper for Web Audio API's AudioContext",
   "devDependencies": {
-    "browserify": "3.30.2",
-    "browserify-shim": "^3.3.1",
-    "grunt": "^0.4.2",
+    "angular": "^1.4.8",
+    "angular-mocks": "^1.4.8",
+    "browserify-shim": "^3.8.11",
+    "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-jshint": "^0.8.0",
-    "grunt-karma": "^0.10.1",
-    "karma": "^0.12.31",
-    "karma-browserify": "^4.1.2",
-    "karma-chrome-launcher": "^0.1.8",
-    "karma-firefox-launcher": "^0.1.4",
-    "karma-mocha": "^0.1.10",
-    "karma-sinon-chai": "^0.3.0",
-    "load-grunt-config": "^0.16.0",
-    "mocha": "^2.2.4",
-    "napa": "^0.4.0"
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-karma": "^0.12.1",
+    "karma": "^0.13.15",
+    "karma-browserify": "^4.4.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.1",
+    "karma-sinon-chai": "^1.1.0",
+    "load-grunt-config": "^0.19.1",
+    "mocha": "^2.3.4"
   },
   "license": "MIT",
   "main": "src/module.js",
   "name": "angular-audio-context",
-  "napa": {
-    "angular": "angular/bower-angular",
-    "angular-mocks": "angular/bower-angular-mocks"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/chrisguttandin/angular-audio-context.git"
   },
   "scripts": {
-    "install": "napa",
     "test": "grunt test"
   },
   "version": "1.0.0"
