@@ -30,6 +30,7 @@
     "load-grunt-config": "^0.19.1",
     "mocha": "^2.3.4"
   },
+  "homepage": "https://github.com/chrisguttandin/angular-audio-context",
   "license": "MIT",
   "main": "src/module.js",
   "name": "angular-audio-context",
