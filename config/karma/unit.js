@@ -16,12 +16,6 @@ module.exports = function (config) {
                 'node_modules/angular/angular.js',
                 'node_modules/angular-mocks/angular-mocks.js',
                 'src/module.js',
-                {
-                    included: false,
-                    pattern: 'test/fixtures/**',
-                    served: true,
-                    watched: true,
-                },
                 'test/unit/**/*.js'
             ],
 
