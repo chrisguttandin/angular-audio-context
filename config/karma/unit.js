@@ -4,45 +4,85 @@ var browserify = require('../../package.json').browserify;
 
 module.exports = function (config) {
 
-    config.set({
+    var configuration = {
 
-        basePath: '../../',
+            basePath: '../../',
 
-        browserify: {
-            transform: browserify.transform
-        },
+            browserify: {
+                transform: browserify.transform
+            },
 
-        browsers: [
+            files: [
+                'node_modules/angular/angular.js',
+                'node_modules/angular-mocks/angular-mocks.js',
+                'src/module.js',
+                {
+                    included: false,
+                    pattern: 'test/fixtures/**',
+                    served: true,
+                    watched: true,
+                },
+                'test/unit/**/*.js'
+            ],
+
+            frameworks: [
+                'browserify',
+                'mocha',
+                'sinon-chai' // implicitly uses chai too
+            ],
+
+            preprocessors: {
+                'src/module.js': 'browserify',
+                'test/unit/**/*.js': 'browserify'
+            }
+
+        };
+
+    if (process.env.TRAVIS) {
+        configuration.browsers = [
+            'ChromeCanarySauceLabs',
+            'ChromeSauceLabs',
+            'FirefoxDeveloperSauceLabs',
+            'FirefoxSauceLabs'
+        ];
+
+        configuration.captureTimeout = 120000;
+
+        configuration.customLaunchers = {
+            ChromeCanarySauceLabs: {
+                base: 'SauceLabs',
+                browserName: 'chrome',
+                platform: 'OS X 10.10',
+                version: 'dev'
+            },
+            ChromeSauceLabs: {
+                base: 'SauceLabs',
+                browserName: 'chrome',
+                platform: 'OS X 10.10'
+            },
+            FirefoxDeveloperSauceLabs: {
+                base: 'SauceLabs',
+                browserName: 'firefox',
+                platform: 'OS X 10.10',
+                version: 'dev'
+            },
+            FirefoxSauceLabs: {
+                base: 'SauceLabs',
+                browserName: 'firefox',
+                platform: 'OS X 10.10'
+            }
+        };
+
+        configuration.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER;
+    } else {
+        configuration.browsers = [
             'Chrome',
             'ChromeCanary',
             'Firefox',
             'FirefoxDeveloper'
-        ],
+        ];
+    }
 
-        files: [
-            'node_modules/angular/angular.js',
-            'node_modules/angular-mocks/angular-mocks.js',
-            'src/module.js',
-            {
-                included: false,
-                pattern: 'test/fixtures/**',
-                served: true,
-                watched: true,
-            },
-            'test/unit/**/*.js'
-        ],
-
-        frameworks: [
-            'browserify',
-            'mocha',
-            'sinon-chai' // implicitly uses chai too
-        ],
-
-        preprocessors: {
-            'src/module.js': 'browserify',
-            'test/unit/**/*.js': 'browserify'
-        }
-
-    });
+    config.set(configuration);
 
 };
