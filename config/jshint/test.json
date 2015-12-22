@@ -13,7 +13,8 @@
         "expect": false,
         "inject": false,
         "it": false,
-        "module": false
+        "module": false,
+        "require": false
     },
     "globalstrict": true,
     "immed": true,
