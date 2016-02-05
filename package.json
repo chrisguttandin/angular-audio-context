@@ -14,7 +14,7 @@
   },
   "description": "An AngularJS wrapper for the Web Audio API's AudioContext",
   "devDependencies": {
-    "angular": "^1.4.8",
+    "angular": "^1.5.0",
     "angular-mocks": "^1.4.8",
     "browserify-shim": "^3.8.11",
     "grunt": "^0.4.5",
