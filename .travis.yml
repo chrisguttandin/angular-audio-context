@@ -4,5 +4,5 @@ env:
     - secure: "K5gO1kcBSR4bjVNBQzdq4X2qXeXWh3Vojt1sdHyUqOFwU0DMriPG60CgJ7O6L6ycWlo56IDEXRiOcjuTkow4qDbvPCrffXZ40CrBzrDx8BUmMBssVMC4+/pp4qMP6YG1RF1qTRYvVy0tH+fuYAdLNCLNgUdqUuiXq19LSsgKvUQ="
 language: node_js
 node_js:
-    - "4.1"
+    - "stable"
 sudo: false
