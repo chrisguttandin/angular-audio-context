@@ -1,8 +1,11 @@
 'use strict';
 
 var angular = require('angular'),
-    AudioContextServiceProvider = require('./provider/audio-context.js');
+    AudioContextService = require('./service/audio-context.js'),
+    AudioContextSupportService = require('./service/audio-context-support.js');
 
 module.exports = angular
     .module('chrisguttandin.audioContext', [])
-    .provider('audioContextService', AudioContextServiceProvider);
+
+    .service('audioContextService', AudioContextService)
+    .service('audioContextSupportService', AudioContextSupportService);
