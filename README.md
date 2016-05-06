@@ -25,21 +25,25 @@ angular
 ```
 
 In addition to the audioContextService, which is essentially an instantiated AudioContext, this
-module also provides an extra property called isSupported. It is a boolean value that indicates if
-the currently used browser supports the Web Audio API's AudioContext or not. An example usage might
-look like this:
+module also provides another service called audioContextSupportService which only has one method
+called `isSupported()`. It returns a promise which resolves to a boolean that indicates if the
+currently used browser supports the Web Audio API's AudioContext or not. An example usage might look
+like this:
 
 ```js
+var audioContext = require('angular-audio-context');
+
 angular
-    .module('your-module', [])
-    .config(function (audioContextServiceProvider, $provide) {
-        $provide.constant('audioContextIsSupported', audioContextServiceProvider.isSupported);
-    })
-    .controller('YourController', ['audioContextIsSupported', function (audioContextIsSupported) {
+  .module('my-app', [audioContext.name])
+  .controller('ExampleCtrl', ['audioContextSupportService', function (audioContextSupportService) {
 
-        this.audioContextIsSupported = audioContextIsSupported;
+    this.isSupported = false;
 
-    });
+    audioContextSupportService
+      .isSupported()
+      .then((isSupported) => this.isSupported = isSupported);
+
+  }]);
 ```
 
 ```html
