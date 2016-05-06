@@ -21,7 +21,7 @@ angular
 
     // do something with the audioContextService instance ...
 
-}]);
+  }]);
 ```
 
 In addition to the audioContextService, which is essentially an instantiated AudioContext, this
