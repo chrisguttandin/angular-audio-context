@@ -11,7 +11,7 @@
   "dependencies": {
     "angular": "^1.5.5",
     "browserify": "^13.0.0",
-    "standardized-audio-context": "^1.0.0"
+    "standardized-audio-context": "^1.0.1"
   },
   "description": "An AngularJS wrapper for the Web Audio API's AudioContext",
   "devDependencies": {
