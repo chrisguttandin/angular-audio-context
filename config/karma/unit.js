@@ -34,7 +34,7 @@ module.exports = function (config) {
 
     if (process.env.TRAVIS) {
         configuration.browsers = [
-            'ChromeCanarySauceLabs',
+            // 'ChromeCanarySauceLabs',
             'ChromeSauceLabs',
             // 'FirefoxDeveloperSauceLabs',
             'FirefoxSauceLabs'
