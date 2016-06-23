@@ -23,7 +23,7 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-githooks": "^0.6.0",
     "grunt-karma": "^1.0.0",
-    "karma": "^0.13.21",
+    "karma": "^1.0.0",
     "karma-browserify": "^5.0.5",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
