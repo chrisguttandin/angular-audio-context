@@ -8,6 +8,9 @@
   "browserify-shim": {
     "angular": "global:angular"
   },
+  "bugs": {
+    "url": "https://github.com/chrisguttandin/angular-audio-context/issues"
+  },
   "dependencies": {
     "angular": "^1.5.5",
     "browserify": "^13.0.0",
