@@ -24,8 +24,8 @@
     "grunt": "^1.0.1",
     "grunt-cli": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-githooks": "^0.6.0",
     "grunt-karma": "^1.0.0",
+    "husky": "^0.11.9",
     "karma": "^1.0.0",
     "karma-browserify": "^5.0.5",
     "karma-chrome-launcher": "^2.0.0",
@@ -49,6 +49,7 @@
     "url": "git://github.com/chrisguttandin/angular-audio-context.git"
   },
   "scripts": {
+    "precommit": "grunt lint",
     "test": "grunt test"
   },
   "version": "4.0.0"
