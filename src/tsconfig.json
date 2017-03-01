@@ -1,7 +1,9 @@
 {
   "angularCompilerOptions": {
     "entryModule": "audio-context.module#AudioContextModule",
-    "skipTemplateCodegen": true
+    "genDir": "../build/es2015",
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true
   },
   "compileOnSave": false,
   "compilerOptions": {
