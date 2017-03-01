@@ -10,50 +10,65 @@ Besides being a wrapper this module also patches the deprecated and prefixed ver
 AudioContext which are out there. It uses the
 [standardized-audio-context](https://github.com/chrisguttandin/standardized-audio-context) to do so.
 
-This module is intended to be used with [Browserify](http://browserify.org/) like this:
+This module can be installed via [npm](https://www.npmjs.com/package/angular-audio-context) like
+this:
 
-```js
-var audioContext = require('angular-audio-context');
-
-angular
-  .module('my-app', [audioContext.name])
-  .controller('ExampleCtrl', ['audioContextService', function (audioContextService) {
-
-    // do something with the audioContextService instance ...
-
-  }]);
+```shell
+npm install angular-audio-context
 ```
 
-In addition to the audioContextService, which is essentially an instantiated AudioContext, this
-module also provides another service called audioContextSupportService which only has one method
-called `isSupported()`. It returns a promise which resolves to a boolean that indicates if the
-currently used browser supports the Web Audio API's AudioContext or not. An example usage might look
-like this:
+It provides an [Angular Module](https://angular.io/docs/ts/latest/guide/ngmodule.html) that can be
+imported into your Angular app as usual.
 
 ```js
-var audioContext = require('angular-audio-context');
+import { AudioContextModule } from 'angular-audio-context';
 
-angular
-  .module('my-app', [audioContext.name])
-  .controller('ExampleCtrl', ['audioContextSupportService', function (audioContextSupportService) {
-
-    this.isSupported = false;
-
-    audioContextSupportService
-      .isSupported()
-      .then((isSupported) => this.isSupported = isSupported);
-
-  }]);
+@NgModule({
+    imports: [
+        AudioContextModule
+    ]
+})
+export class AppModule { }
 ```
 
-```html
-<div ng-controller="YourController as ctrl" ng-if="!ctrl.audioContextIsSupported">
-    <span>Sorry AudioContext is not supported.</span>
-</div>
+The `AudioContext` can then be injected into your components and services.
+
+```typescript
+import { Inject, Injectable } from '@angular/core';
+import { AudioContext } from 'angular-audio-context';
+
+@Injectable()
+export class AnyService {
+
+    constructor(@Inject(AudioContext) private _audioContext) { }
+
+}
+```
+
+In addition to the `AudioContext`, this module also provides a promise called  `isSupported` which
+either resolves to true or false depending on the currently used browser's Web Audio API support. An
+example usage might look like this:
+
+```typescript
+import { Component, Inject } from '@angular/core';
+import { isSupported } from 'angular-audio-context';
+
+@Component({
+    selector: 'any-component',
+    template: '<span *ngIf="this.isSupported | async">Yeah, your browser is supported.</span>'
+})
+export class AnyComponent {
+
+    constructor(@Inject(isSupported) public isSupported) { }
+
+}
 ```
 
 In case you are missing a feature or found a bug just fork this repository or raise an issue.
 Thanks.
+
+Up to [version 5](https://github.com/chrisguttandin/angular-audio-context/releases/tag/v5.0.0) this
+module was compatible with Angular 1.
 
 There is also module called [ngWebAudio](https://github.com/nehz/ngWebAudio) which tries to simplify
 the buffering and playback of a single audio file by utilizing the Web Audio API.
