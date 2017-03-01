@@ -1,6 +1,6 @@
 # angular-audio-context
 
-**An AngularJS wrapper for the Web Audio API's AudioContext.**
+**An Angular wrapper for the Web Audio API's AudioContext.**
 
 [![tests](https://img.shields.io/travis/chrisguttandin/angular-audio-context/master.svg?style=flat-square)](https://travis-ci.org/chrisguttandin/angular-audio-context)
 [![dependencies](https://img.shields.io/david/chrisguttandin/angular-audio-context.svg?style=flat-square)](https://www.npmjs.com/package/angular-audio-context)

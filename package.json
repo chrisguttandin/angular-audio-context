@@ -10,7 +10,7 @@
     "standardized-audio-context": "^5.0.3",
     "zone.js": "^0.7.2"
   },
-  "description": "An AngularJS wrapper for the Web Audio API's AudioContext",
+  "description": "An Angular wrapper for the Web Audio API's AudioContext",
   "devDependencies": {
     "@angular/cli": "1.0.0-rc.0",
     "@angular/compiler-cli": "2.4.7",
