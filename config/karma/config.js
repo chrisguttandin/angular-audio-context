@@ -1,82 +1,118 @@
-'use strict';
+module.exports = (config) => {
 
-var browserify = require('../../package.json').browserify;
+    config.set({
 
-module.exports = function (config) {
+        angularCli: {
+            config: './.angular-cli.json',
+            environment: 'dev'
+        },
 
-    var configuration = {
+        basePath: '../../',
 
-            basePath: '../../',
+        client: {
+            clearContext: false
+        },
 
-            browserify: {
-                transform: browserify.transform
-            },
+        concurrency: 2,
 
-            files: [
-                'node_modules/angular/angular.js',
-                'node_modules/angular-mocks/angular-mocks.js',
-                'src/module.js',
-                'test/unit/**/*.js'
-            ],
+        coverageIstanbulReporter: {
+            fixWebpackSourcePaths: true,
+            reports: [ 'html', 'lcovonly' ]
+        },
 
-            frameworks: [
-                'browserify',
-                'mocha',
-                'sinon-chai' // implicitly uses chai too
-            ],
-
-            preprocessors: {
-                'src/module.js': 'browserify',
-                'test/unit/**/*.js': 'browserify'
+        files: [
+            {
+                pattern: './config/karma/test.ts',
+                watched: false
             }
+        ],
 
-        };
+        frameworks: [
+            '@angular/cli',
+            'jasmine'
+        ],
+
+        mime: {
+            'text/x-typescript': [ 'ts', 'tsx' ]
+        },
+
+        plugins: [
+            '@angular/cli/plugins/karma',
+            'karma-*'
+        ],
+
+        preprocessors: {
+            './config/karma/test.ts': [ '@angular/cli' ]
+        },
+
+        remapIstanbulReporter: {
+            reports: {
+                html: 'coverage',
+                lcovonly: './coverage/coverage.lcov'
+            }
+        },
+
+        reporters: config.angularCli && config.angularCli.codeCoverage
+            ? [ 'progress', 'coverage-istanbul' ]
+            : [ 'progress', 'kjhtml' ]
+
+    });
 
     if (process.env.TRAVIS) {
-        configuration.browsers = [
-            // 'ChromeCanarySauceLabs',
-            'ChromeSauceLabs',
-            // 'FirefoxDeveloperSauceLabs',
-            'FirefoxSauceLabs'
-        ];
 
-        configuration.captureTimeout = 120000;
+        config.set({
 
-        configuration.customLaunchers = {
-            ChromeCanarySauceLabs: {
-                base: 'SauceLabs',
-                browserName: 'chrome',
-                platform: 'OS X 10.11',
-                version: 'dev'
-            },
-            ChromeSauceLabs: {
-                base: 'SauceLabs',
-                browserName: 'chrome',
-                platform: 'OS X 10.11'
-            },
-            FirefoxDeveloperSauceLabs: {
-                base: 'SauceLabs',
-                browserName: 'firefox',
-                platform: 'OS X 10.11',
-                version: 'dev'
-            },
-            FirefoxSauceLabs: {
-                base: 'SauceLabs',
-                browserName: 'firefox',
-                platform: 'OS X 10.11'
-            }
-        };
+            browsers: [
+                // 'ChromeCanarySauceLabs',
+                'ChromeSauceLabs',
+                // 'FirefoxDeveloperSauceLabs',
+                'FirefoxSauceLabs'
+            ],
 
-        configuration.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER;
+            captureTimeout: 120000,
+
+            customLaunchers: {
+                ChromeCanarySauceLabs: {
+                    base: 'SauceLabs',
+                    browserName: 'chrome',
+                    platform: 'OS X 10.11',
+                    version: 'dev'
+                },
+                ChromeSauceLabs: {
+                    base: 'SauceLabs',
+                    browserName: 'chrome',
+                    platform: 'OS X 10.11'
+                },
+                FirefoxDeveloperSauceLabs: {
+                    base: 'SauceLabs',
+                    browserName: 'firefox',
+                    platform: 'OS X 10.11',
+                    version: 'dev'
+                },
+                FirefoxSauceLabs: {
+                    base: 'SauceLabs',
+                    browserName: 'firefox',
+                    platform: 'OS X 10.11'
+                }
+            },
+
+            tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
+
+        });
+
     } else {
-        configuration.browsers = [
-            'Chrome',
-            'ChromeCanary',
-            'Firefox',
-            'FirefoxDeveloper'
-        ];
-    }
 
-    config.set(configuration);
+        config.set({
+
+            browsers: [
+                'Chrome',
+                'ChromeCanary',
+                'Firefox',
+                'FirefoxDeveloper'
+            ]
+
+        });
+
+    }
 
 };
