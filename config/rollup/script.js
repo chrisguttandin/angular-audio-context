@@ -4,7 +4,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
     dest: 'build/es5/script.js',
-    entry: 'build/es2015/module.js',
+    entry: 'build/esm/module.js',
     format: 'umd',
     moduleName: 'angularAudioContext',
     plugins: [

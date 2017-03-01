@@ -53,11 +53,11 @@
   },
   "files": [
     "build/es5/",
-    "build/es2015/",
+    "build/esm/",
     "src/"
   ],
   "homepage": "https://github.com/chrisguttandin/angular-audio-context",
-  "jsnext:main": "build/es2015/module.js",
+  "jsnext:main": "build/esm/module.js",
   "license": "MIT",
   "main": "build/es5/bundle.js",
   "name": "angular-audio-context",
@@ -70,6 +70,6 @@
     "prepublish": "grunt build",
     "test": "grunt lint && grunt test"
   },
-  "types": "build/es2015/module.d.ts",
+  "types": "build/esm/module.d.ts",
   "version": "6.0.0"
 }
