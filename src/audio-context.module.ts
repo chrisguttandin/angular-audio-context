@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule, OpaqueToken } from '@angular/core';
 import {
     AudioContext as StandardizedAudioContextAudioContext,
@@ -18,6 +19,9 @@ export function isSupportedFactory () {
 }
 
 @NgModule({
+    imports: [
+        CommonModule
+    ],
     providers: [
         { provide: AudioContext, useFactory: audioContextConstructorFactory },
         { provide: isSupported, useFactory: isSupportedFactory }
