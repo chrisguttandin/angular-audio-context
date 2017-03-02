@@ -4,7 +4,7 @@
     "url": "https://github.com/chrisguttandin/angular-audio-context/issues"
   },
   "dependencies": {
-    "@angular/common": "2.4.7",
+    "@angular/common": "2.4.9",
     "@angular/core": "2.4.7",
     "rxjs": "^5.0.1",
     "standardized-audio-context": "^5.0.3",
