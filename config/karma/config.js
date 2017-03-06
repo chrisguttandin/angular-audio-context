@@ -3,8 +3,7 @@ module.exports = (config) => {
     config.set({
 
         angularCli: {
-            config: './.angular-cli.json',
-            environment: 'dev'
+            config: './.angular-cli.json'
         },
 
         basePath: '../../',
@@ -43,13 +42,6 @@ module.exports = (config) => {
 
         preprocessors: {
             './config/karma/test.ts': [ '@angular/cli' ]
-        },
-
-        remapIstanbulReporter: {
-            reports: {
-                html: 'coverage',
-                lcovonly: './coverage/coverage.lcov'
-            }
         },
 
         reporters: config.angularCli && config.angularCli.codeCoverage

@@ -1,0 +1,24 @@
+{
+  "angularCompilerOptions": {
+    "entryModule": "../../src/audio-context.module#AudioContextModule"
+  },
+  "compilerOptions": {
+    "baseUrl": "",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2016" ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "../../build/out-tsc/spec",
+    "sourceMap": true,
+    "target": "es6",
+    "types": [ "jasmine", "node" ]
+  },
+  "files": [
+    "../../config/karma/test.ts"
+  ],
+  "include": [
+    "**/*.ts"
+  ]
+}

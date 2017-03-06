@@ -3,19 +3,18 @@
         {
             "assets": [],
             "main": "module.ts",
-            "mobile": false,
             "outDir": "build",
             "polyfills": "polyfills.ts",
             "root": "src",
             "scripts": [],
             "styles": [],
             "test": "../config/karma/test.ts",
+            "testTsconfig": "../test/unit/tsconfig.json",
             "tsconfig": "tsconfig.json"
         }
     ],
     "project": {
-        "name": "angular-audio-context",
-        "version": "1.0.0-rc.0"
+        "name": "angular-audio-context"
     },
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
     "test": {
