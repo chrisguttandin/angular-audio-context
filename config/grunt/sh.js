@@ -6,7 +6,7 @@ module.exports = {
         cmd: 'ng test'
     },
     lint: {
-        cmd: 'tslint -c config/tslint/src.json --project src/tsconfig.json --type-check src/**/*.ts'
+        cmd: 'ng lint'
     },
     test: {
         cmd: 'ng test --watch false'

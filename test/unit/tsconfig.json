@@ -13,7 +13,10 @@
     "outDir": "../../build/out-tsc/spec",
     "sourceMap": true,
     "target": "es6",
-    "types": [ "jasmine", "node" ]
+    "types": [
+      "jasmine",
+      "node"
+    ]
   },
   "files": [
     "../../config/karma/test.ts"

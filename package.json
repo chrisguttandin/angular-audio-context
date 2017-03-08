@@ -4,8 +4,8 @@
     "url": "https://github.com/chrisguttandin/angular-audio-context/issues"
   },
   "dependencies": {
-    "@angular/common": "^2.4.9",
-    "@angular/core": "^2.4.9",
+    "@angular/common": ">=4.0.0-beta <5.0.0",
+    "@angular/core": ">=4.0.0-beta <5.0.0",
     "rxjs": "^5.0.1",
     "standardized-audio-context": "^5.0.3",
     "zone.js": "^0.7.2"
@@ -13,11 +13,11 @@
   "description": "An Angular wrapper for the Web Audio API's AudioContext",
   "devDependencies": {
     "@angular/cli": "1.0.0-rc.1",
-    "@angular/compiler": "^2.4.9",
-    "@angular/compiler-cli": "^2.4.9",
-    "@angular/platform-browser": "^2.4.9",
-    "@angular/platform-browser-dynamic": "^2.4.9",
-    "@angular/router": "^3.4.9",
+    "@angular/compiler": ">=4.0.0-beta <5.0.0",
+    "@angular/compiler-cli": ">=4.0.0-beta <5.0.0",
+    "@angular/platform-browser": ">=4.0.0-beta <5.0.0",
+    "@angular/platform-browser-dynamic": ">=4.0.0-beta <5.0.0",
+    "@angular/router": ">=4.0.0-beta <5.0.0",
     "babel-preset-es2015": "^6.22.0",
     "chai": "^3.5.0",
     "core-js": "^2.4.1",
@@ -27,7 +27,6 @@
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-uglify": "^2.1.0",
     "grunt-sh": "^0.1.4",
-    "grunt-tslint": "^4.0.1",
     "gruntify-eslint": "^3.1.0",
     "husky": "^0.13.1",
     "jasmine": "~2.5.2",
@@ -49,8 +48,8 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "ts-loader": "^2.0.1",
-    "tslint-config-holy-grail": "^7.0.0",
-    "typescript": "~2.0.0",
+    "tslint-config-holy-grail": "~6.0.0",
+    "typescript": "~2.1.0",
     "webpack": "^2.2.1"
   },
   "files": [
