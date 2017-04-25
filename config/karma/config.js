@@ -3,7 +3,7 @@ module.exports = (config) => {
     config.set({
 
         angularCli: {
-            config: './.angular-cli.json'
+            environment: 'dev'
         },
 
         basePath: '../../',
