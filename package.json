@@ -60,9 +60,9 @@
     "src/"
   ],
   "homepage": "https://github.com/chrisguttandin/angular-audio-context",
-  "jsnext:main": "build/esm/module.js",
   "license": "MIT",
   "main": "build/es5/bundle.js",
+  "module": "build/esm/module.js",
   "name": "angular-audio-context",
   "repository": {
     "type": "git",
