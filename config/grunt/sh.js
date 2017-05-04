@@ -1,15 +1,20 @@
 module.exports = {
-    build: {
-        cmd: 'ngc -p src/tsconfig.json && rollup -c config/rollup/bundle.js'
-        // @todo Generating the script with 'rollup -c config/rollup/script.js' doesn't work right now.
+    'build-es2015': {
+        cmd: 'ngc -p src/tsconfig.json'
     },
-    continuous: {
+    'build-es5': {
+        cmd: 'rollup -c config/rollup/bundle.js'
+    },
+    'build-esm': {
+        cmd: 'ngc -p src/tsconfig.esm.json'
+    },
+    'continuous': {
         cmd: 'ng test'
     },
-    lint: {
+    'lint': {
         cmd: 'ng lint'
     },
-    test: {
+    'test': {
         cmd: 'ng test --watch false'
     }
 };

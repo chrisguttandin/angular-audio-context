@@ -1,7 +1,7 @@
 {
   "angularCompilerOptions": {
     "entryModule": "audio-context.module#AudioContextModule",
-    "genDir": "../build/es2015",
+    "genDir": "../build/esm",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
   },
@@ -19,9 +19,9 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "../build/es2015",
+    "outDir": "../build/esm",
     "sourceMap": true,
-    "target": "es2015",
+    "target": "es5",
     "types": [ ]
   }
 }
