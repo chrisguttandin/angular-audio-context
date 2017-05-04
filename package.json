@@ -53,6 +53,7 @@
   },
   "files": [
     "build/es5/",
+    "build/es2015/",
     "build/esm/",
     "src/"
   ],
