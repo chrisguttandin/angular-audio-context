@@ -8,6 +8,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "declaration": true,
+    "declarationDir": "../build/ts",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": [ "dom", "es2015" ],
