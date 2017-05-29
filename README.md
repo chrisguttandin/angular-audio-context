@@ -1,5 +1,7 @@
 # angular-audio-context
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chrisguttandin/angular-audio-context.svg)](https://greenkeeper.io/)
+
 **An Angular wrapper for the Web Audio API's AudioContext.**
 
 [![tests](https://img.shields.io/travis/chrisguttandin/angular-audio-context/master.svg?style=flat-square)](https://travis-ci.org/chrisguttandin/angular-audio-context)
