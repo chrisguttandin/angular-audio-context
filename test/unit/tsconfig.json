@@ -7,7 +7,7 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [ "es2016" ],
+    "lib": [ "dom", "es2016" ],
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "../../build/out-tsc/spec",
