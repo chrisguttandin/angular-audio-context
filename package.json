@@ -4,8 +4,8 @@
     "url": "https://github.com/chrisguttandin/angular-audio-context/issues"
   },
   "dependencies": {
-    "@angular/common": "^4.2.2",
-    "@angular/core": "^4.2.2",
+    "@angular/common": "^4.2.3",
+    "@angular/core": "^4.2.3",
     "rxjs": "^5.4.0",
     "standardized-audio-context": "^8.0.14",
     "zone.js": "^0.8.12"
@@ -13,12 +13,12 @@
   "description": "An Angular wrapper for the Web Audio API's AudioContext.",
   "devDependencies": {
     "@angular/cli": "1.1.2",
-    "@angular/compiler": "^4.2.2",
-    "@angular/compiler-cli": "^4.2.2",
-    "@angular/language-service": "^4.2.2",
-    "@angular/platform-browser": "^4.2.2",
-    "@angular/platform-browser-dynamic": "^4.2.2",
-    "@angular/router": "^4.2.2",
+    "@angular/compiler": "^4.2.3",
+    "@angular/compiler-cli": "^4.2.3",
+    "@angular/language-service": "^4.2.3",
+    "@angular/platform-browser": "^4.2.3",
+    "@angular/platform-browser-dynamic": "^4.2.3",
+    "@angular/router": "^4.2.3",
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
     "babel-preset-es2015": "^6.22.0",
