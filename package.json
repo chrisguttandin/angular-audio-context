@@ -52,7 +52,7 @@
     "ts-loader": "^2.0.1",
     "tslint-config-holy-grail": "^9.0.2",
     "typescript": "~2.3.3",
-    "webpack": "^2.2.1"
+    "webpack": "^3.0.0"
   },
   "files": [
     "build/es5/",
