@@ -47,7 +47,7 @@
     "mocha": "^3.0.0",
     "rollup": "^0.43.0",
     "rollup-plugin-babel": "^2.7.1",
-    "sinon": "^2.3.4",
+    "sinon": "^2.3.5",
     "sinon-chai": "^2.11.0",
     "ts-loader": "^2.0.1",
     "tslint-config-holy-grail": "^9.0.2",
