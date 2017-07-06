@@ -33,7 +33,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-sh": "^0.1.4",
     "gruntify-eslint": "^4.0.0",
-    "husky": "^0.14.2",
+    "husky": "^0.14.3",
     "jasmine-core": "^2.6.4",
     "jasmine-spec-reporter": "^4.1.1",
     "karma": "~1.7.0",
