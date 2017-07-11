@@ -46,7 +46,7 @@
     "karma-sauce-launcher": "^1.1.0",
     "load-grunt-config": "^0.19.1",
     "mocha": "^3.0.0",
-    "rollup": "^0.45.0",
+    "rollup": "^0.45.1",
     "rollup-plugin-babel": "^2.7.1",
     "sinon": "^2.3.6",
     "sinon-chai": "^2.11.0",
