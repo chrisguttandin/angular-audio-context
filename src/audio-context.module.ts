@@ -7,7 +7,7 @@ import {
     isSupported as standardizedAudioContextModuleIsSupported
 } from 'standardized-audio-context';
 
-export { IAudioContextConstructor };
+export { IAudioContext, IAudioContextConstructor };
 
 export const AudioContext = new InjectionToken<typeof StandardizedAudioContextAudioContext>('AUDIO_CONTEXT_CONSTRUCTOR'); // tslint:disable-line:max-line-length variable-name
 
