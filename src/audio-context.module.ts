@@ -9,7 +9,7 @@ import {
 
 export { IAudioContext, IAudioContextConstructor };
 
-export const AudioContext = new InjectionToken<typeof StandardizedAudioContextAudioContext>('AUDIO_CONTEXT_CONSTRUCTOR'); // tslint:disable-line:max-line-length variable-name
+export const AudioContext = new InjectionToken<IAudioContext>('AUDIO_CONTEXT_CONSTRUCTOR'); // tslint:disable-line:max-line-length variable-name
 
 export function audioContextConstructorFactory (): IAudioContext {
     return new StandardizedAudioContextAudioContext();
