@@ -7,7 +7,7 @@
     "@angular/common": "^4.3.3",
     "@angular/core": "^4.3.3",
     "rxjs": "^5.4.2",
-    "standardized-audio-context": "^8.2.1",
+    "standardized-audio-context": "^8.2.2",
     "zone.js": "^0.8.16"
   },
   "description": "An Angular wrapper for the Web Audio API's AudioContext.",
