@@ -5,7 +5,7 @@ module.exports = {
                 cwd: 'src/',
                 dest: 'build/ts/',
                 expand: true,
-                src: [ '*.ts' ]
+                src: [ '**/*.ts' ]
             }
         ]
     }
