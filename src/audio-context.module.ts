@@ -1,19 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { InjectionToken, NgModule } from '@angular/core';
-import {
-    AudioContext as StandardizedAudioContextAudioContext,
-    IAudioContext,
-    IAudioContextConstructor,
-    isSupported as standardizedAudioContextModuleIsSupported
-} from 'standardized-audio-context';
+import { AudioContext, IAudioContext, isSupported as standardizedAudioContextModuleIsSupported } from 'standardized-audio-context';
 
-export { IAudioContext, IAudioContextConstructor };
-
-export const AudioContext = new InjectionToken<IAudioContext>('AUDIO_CONTEXT_CONSTRUCTOR'); // tslint:disable-line:max-line-length variable-name
-
-export function audioContextConstructorFactory (): IAudioContext {
-    return new StandardizedAudioContextAudioContext();
-}
+export { AudioContext, IAudioContext };
 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
 
@@ -26,7 +15,7 @@ export function isSupportedFactory () {
         CommonModule
     ],
     providers: [
-        { provide: AudioContext, useFactory: audioContextConstructorFactory },
+        AudioContext,
         { provide: isSupported, useFactory: isSupportedFactory }
     ]
 })
