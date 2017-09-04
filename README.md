@@ -20,12 +20,12 @@ npm install angular-audio-context
 It provides an [Angular Module](https://angular.io/docs/ts/latest/guide/ngmodule.html) that can be
 imported into your Angular app as usual.
 
-```js
+```typescript
 import { AudioContextModule } from 'angular-audio-context';
 
 @NgModule({
     imports: [
-        AudioContextModule
+        AudioContextModule.forRoot(latencyHint: 'balanced')
     ]
 })
 export class AppModule { }
@@ -40,7 +40,7 @@ import { AudioContext } from 'angular-audio-context';
 @Injectable()
 export class AnyService {
 
-    constructor(@Inject(AudioContext) private _audioContext) { }
+    constructor(private _audioContext: AudioContext) { }
 
 }
 ```
