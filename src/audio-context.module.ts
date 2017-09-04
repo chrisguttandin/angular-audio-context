@@ -9,10 +9,8 @@ import {
 
 export { AudioContext, IAudioContext };
 
-export function createAudioContextFactory (latencyHint: IAudioContextOptions['latencyHint']) {
-    return function () {
-        return new AudioContext({ latencyHint });
-    };
+export function audioContextFactory (latencyHint: IAudioContextOptions['latencyHint']) {
+    return new AudioContext({ latencyHint });
 }
 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
@@ -32,10 +30,13 @@ export function isSupportedFactory () {
 export class AudioContextModule {
 
     public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders {
+        const latencyHintToken = new InjectionToken<IAudioContextOptions['latencyHint']>('LATENCY_HINT');
+
         return {
             ngModule: AudioContextModule,
             providers: [
-                { provide: AudioContext, useFactory: createAudioContextFactory(latencyHint) }
+                { deps: [ latencyHintToken ], provide: AudioContext, useFactory: audioContextFactory },
+                { provide: latencyHintToken, useValue: latencyHint }
             ]
         };
     }
