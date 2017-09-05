@@ -25,7 +25,7 @@ import { AudioContextModule } from 'angular-audio-context';
 
 @NgModule({
     imports: [
-        AudioContextModule.forRoot(latencyHint: 'balanced')
+        AudioContextModule.forRoot('balanced')
     ]
 })
 export class AppModule { }
