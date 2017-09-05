@@ -9,13 +9,15 @@ import {
 
 export { AudioContext, IAudioContext, IAudioContextOptions };
 
-export function audioContextFactory (latencyHint: IAudioContextOptions['latencyHint']) {
+// @todo This export is only necessary for AoT.
+export function _audioContextFactory (latencyHint: IAudioContextOptions['latencyHint']) {
     return new AudioContext({ latencyHint });
 }
 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
 
-export function isSupportedFactory () {
+// @todo This export is only necessary for AoT.
+export function _isSupportedFactory () {
     return standardizedAudioContextModuleIsSupported;
 }
 
@@ -24,7 +26,7 @@ export function isSupportedFactory () {
         CommonModule
     ],
     providers: [
-        { provide: isSupported, useFactory: isSupportedFactory }
+        { provide: isSupported, useFactory: _isSupportedFactory }
     ]
 })
 export class AudioContextModule {
@@ -35,7 +37,7 @@ export class AudioContextModule {
         return {
             ngModule: AudioContextModule,
             providers: [
-                { deps: [ latencyHintToken ], provide: AudioContext, useFactory: audioContextFactory },
+                { deps: [ latencyHintToken ], provide: AudioContext, useFactory: _audioContextFactory },
                 { provide: latencyHintToken, useValue: latencyHint }
             ]
         };
