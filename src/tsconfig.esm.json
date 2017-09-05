@@ -1,6 +1,5 @@
 {
   "angularCompilerOptions": {
-    "entryModule": "audio-context.module#AudioContextModule",
     "genDir": "../build/esm",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
