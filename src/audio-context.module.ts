@@ -8,6 +8,7 @@ import {
 } from 'standardized-audio-context';
 import { audioContextFactory } from './audio-context-factory';
 import { isSupportedFactory } from './is-supported-factory';
+import { latencyHintToken } from './latency-hint-token';
 
 export { AudioContext, IAudioContext, IAudioContextOptions };
 
@@ -24,8 +25,6 @@ export const isSupported = new InjectionToken<typeof standardizedAudioContextMod
 export class AudioContextModule {
 
     public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders {
-        const latencyHintToken = new InjectionToken<IAudioContextOptions['latencyHint']>('LATENCY_HINT');
-
         return {
             ngModule: AudioContextModule,
             providers: [
