@@ -56,9 +56,10 @@ module.exports = (config) => {
 
             browsers: [
                 // 'ChromeCanarySauceLabs',
-                'ChromeSauceLabs',
+                'ChromeSauceLabs'
                 // 'FirefoxDeveloperSauceLabs',
-                'FirefoxSauceLabs'
+                // @todo Enable all tests again.
+                // 'FirefoxSauceLabs'
             ],
 
             captureTimeout: 120000,
