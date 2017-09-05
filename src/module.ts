@@ -1,1 +1,1 @@
-export { AudioContext, AudioContextModule, IAudioContext, IAudioContextOptions, isSupported } from './audio-context.module';
+export * from './audio-context.module';
