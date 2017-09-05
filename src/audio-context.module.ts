@@ -7,7 +7,7 @@ import {
     isSupported as standardizedAudioContextModuleIsSupported
 } from 'standardized-audio-context';
 
-export { AudioContext, IAudioContext };
+export { AudioContext, IAudioContext, IAudioContextOptions };
 
 export function audioContextFactory (latencyHint: IAudioContextOptions['latencyHint']) {
     return new AudioContext({ latencyHint });
