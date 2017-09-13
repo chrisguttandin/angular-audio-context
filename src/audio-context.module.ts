@@ -6,9 +6,9 @@ import {
     IAudioContextOptions,
     isSupported as standardizedAudioContextModuleIsSupported
 } from 'standardized-audio-context';
-import { audioContextFactory } from './audio-context-factory';
-import { isSupportedFactory } from './is-supported-factory';
-import { latencyHintToken } from './latency-hint-token';
+import { audioContextFactory } from './audio-context-factory';
+import { isSupportedFactory } from './is-supported-factory';
+import { latencyHintToken } from './latency-hint-token';
 
 export { AudioContext, IAudioContext, IAudioContextOptions };
 
