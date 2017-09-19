@@ -57,7 +57,7 @@
     "sinon-chai": "^2.13.0",
     "ts-loader": "^2.3.7",
     "tslint": "^5.7.0",
-    "tslint-config-holy-grail": "^13.0.1",
+    "tslint-config-holy-grail": "^13.0.2",
     "typescript": "~2.3.3"
   },
   "files": [
