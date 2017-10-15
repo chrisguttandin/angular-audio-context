@@ -57,11 +57,15 @@ module.exports = (config) => {
         config.set({
 
             browsers: [
-                // 'ChromeCanarySauceLabs',
+                /*
+                 * @todo Enable all tests again.
+                 * 'ChromeCanarySauceLabs',
+                 */
                 'ChromeSauceLabs'
-                // 'FirefoxDeveloperSauceLabs',
-                // @todo Enable all tests again.
-                // 'FirefoxSauceLabs'
+                /*
+                 * 'FirefoxDeveloperSauceLabs',
+                 * 'FirefoxSauceLabs'
+                 */
             ],
 
             captureTimeout: 120000,
