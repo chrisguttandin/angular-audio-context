@@ -4,7 +4,7 @@ import 'zone.js/dist/sync-test'; // tslint:disable-line:ordered-imports
 import 'zone.js/dist/jasmine-patch'; // tslint:disable-line:ordered-imports
 import 'zone.js/dist/async-test'; // tslint:disable-line:ordered-imports
 import 'zone.js/dist/fake-async-test'; // tslint:disable-line:ordered-imports
-import { getTestBed } from '@angular/core/testing';
+import { getTestBed } from '@angular/core/testing'; // tslint:disable-line:ordered-imports
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
