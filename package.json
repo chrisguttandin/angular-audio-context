@@ -18,7 +18,7 @@
     "@angular/compiler-cli": "^4.4.6",
     "@angular/language-service": "^4.4.6",
     "@angular/platform-browser": "^4.4.6",
-    "@angular/platform-browser-dynamic": "^4.4.6",
+    "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^4.4.6",
     "@types/jasmine": "^2.6.2",
     "@types/jasminewd2": "^2.0.3",
