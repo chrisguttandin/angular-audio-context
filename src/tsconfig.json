@@ -4,24 +4,10 @@
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
   },
-  "compileOnSave": false,
   "compilerOptions": {
-    "declaration": true,
     "declarationDir": "../build/ts",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": [ "dom", "es2015" ],
-    "module": "es2015",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "outDir": "../build/es2015",
-    "sourceMap": true,
-    "target": "es5",
-    "types": [ ]
-  }
+    "target": "es5"
+  },
+  "extends": "../node_modules/tsconfig-holy-grail/src/tsconfig-browser"
 }
