@@ -10,8 +10,8 @@ describe('module', () => {
 
     describe('forRoot()', () => {
 
-        let audioContext;
-        let isSupported;
+        let audioContext: AudioContext;
+        let isSupported: Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
@@ -21,7 +21,7 @@ describe('module', () => {
             });
         });
 
-        beforeEach(inject([ Injector ], (injector) => {
+        beforeEach(inject([ Injector ], (injector: Injector) => {
             audioContext = injector.get(AudioContext);
             isSupported = injector.get(audioContextModuleIsSupported);
         }));
@@ -38,7 +38,7 @@ describe('module', () => {
 
     describe('forChild()', () => {
 
-        let isSupported;
+        let isSupported: Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
@@ -48,7 +48,7 @@ describe('module', () => {
             });
         });
 
-        beforeEach(inject([ Injector ], (injector) => {
+        beforeEach(inject([ Injector ], (injector: Injector) => {
             isSupported = injector.get(audioContextModuleIsSupported);
         }));
 
