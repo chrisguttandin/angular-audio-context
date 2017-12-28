@@ -45,9 +45,9 @@ export class AnyService {
 }
 ```
 
-In addition to the `AudioContext`, this module also provides a promise called  `isSupported` which
-either resolves to true or false depending on the currently used browser's Web Audio API support. An
-example usage might look like this:
+In addition to the `AudioContext`, this module also provides a function called `isSupported` which
+returns a promise which either resolves to true or false depending on the currently used browser's
+Web Audio API support. An example usage might look like this:
 
 ```typescript
 import { Component, Inject } from '@angular/core';
@@ -55,7 +55,7 @@ import { isSupported } from 'angular-audio-context';
 
 @Component({
     selector: 'any-component',
-    template: '<span *ngIf="this.isSupported | async">Yeah, your browser is supported.</span>'
+    template: '<span *ngIf="this.isSupported() | async">Yeah, your browser is supported.</span>'
 })
 export class AnyComponent {
 

@@ -11,7 +11,7 @@ describe('module', () => {
     describe('forRoot()', () => {
 
         let audioContext: AudioContext;
-        let isSupported: Promise<boolean>;
+        let isSupported: () => Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
@@ -30,7 +30,7 @@ describe('module', () => {
             expect(audioContext instanceof standardizedAudioContextAudioContext).toBe(true);
         });
 
-        it('should provide the isSupported Promise from standardized-audio-context module', () => {
+        it('should provide the isSupported() function from standardized-audio-context module', () => {
             expect(isSupported).toBe(standardizedAudioContextIsSupported);
         });
 
@@ -38,7 +38,7 @@ describe('module', () => {
 
     describe('forChild()', () => {
 
-        let isSupported: Promise<boolean>;
+        let isSupported: () => Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
@@ -52,7 +52,7 @@ describe('module', () => {
             isSupported = injector.get(audioContextModuleIsSupported);
         }));
 
-        it('should provide the isSupported Promise from standardized-audio-context module', () => {
+        it('should provide the isSupported() function from standardized-audio-context module', () => {
             expect(isSupported).toBe(standardizedAudioContextIsSupported);
         });
 
