@@ -10,7 +10,7 @@
     "rxjs": "^5.5.6",
     "standardized-audio-context": "^11.0.8",
     "tslib": "^1.8.1",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.20"
   },
   "description": "An Angular wrapper for the Web Audio API's AudioContext.",
   "devDependencies": {
