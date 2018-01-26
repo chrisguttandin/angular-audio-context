@@ -14,7 +14,7 @@
   },
   "description": "An Angular wrapper for the Web Audio API's AudioContext.",
   "devDependencies": {
-    "@angular/cli": "^1.6.5",
+    "@angular/cli": "^1.6.6",
     "@angular/compiler": "^5.2.1",
     "@angular/compiler-cli": "^5.2.1",
     "@angular/language-service": "^5.2.1",
