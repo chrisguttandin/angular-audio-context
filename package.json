@@ -68,6 +68,20 @@
     "build/ts/",
     "src/"
   ],
+  "greenkeeper": {
+    "ignore": [
+      "@types/jasmine",
+      "@types/jasminewd2",
+      "@types/node",
+      "jasmine-core",
+      "jasmine-spec-reporter",
+      "karma",
+      "karma-chrome-launcher",
+      "karma-jasmine",
+      "tslint",
+      "typescript"
+    ]
+  },
   "homepage": "https://github.com/chrisguttandin/angular-audio-context",
   "license": "MIT",
   "main": "build/es5/bundle.js",
