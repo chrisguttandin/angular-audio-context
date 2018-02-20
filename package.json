@@ -58,7 +58,7 @@
     "tsconfig-holy-grail": "^4.0.0",
     "tslint": "^5.9.1",
     "tslint-config-holy-grail": "^22.0.5",
-    "typescript": "~2.5.3"
+    "typescript": "~2.6.2"
   },
   "files": [
     "build/es5/",
