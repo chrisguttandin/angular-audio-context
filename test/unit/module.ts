@@ -22,8 +22,8 @@ describe('module', () => {
         });
 
         beforeEach(inject([ Injector ], (injector: Injector) => {
-            audioContext = injector.get(AudioContext);
-            isSupported = injector.get(audioContextModuleIsSupported);
+            audioContext = injector.get<AudioContext>(AudioContext);
+            isSupported = injector.get<() => Promise<boolean>>(audioContextModuleIsSupported);
         }));
 
         it('should provide an instance of the AudioContext class from standardized-audio-context module', () => {
