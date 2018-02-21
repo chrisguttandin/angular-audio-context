@@ -5,7 +5,7 @@
     "strictMetadataEmit": true
   },
   "compilerOptions": {
-    "declarationDir": "../build/ts",
+    "declarationDir": "../build/es2015",
     "outDir": "../build/es2015",
     "target": "es5"
   },

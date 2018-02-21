@@ -94,6 +94,6 @@
     "prepublishOnly": "grunt build",
     "test": "grunt lint && grunt test"
   },
-  "types": "build/ts/module.d.ts",
+  "types": "build/es2015/module.d.ts",
   "version": "13.0.21"
 }
