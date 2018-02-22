@@ -95,5 +95,5 @@
     "test": "grunt lint && grunt test"
   },
   "types": "build/es2015/module.d.ts",
-  "version": "13.0.21"
+  "version": "13.0.22"
 }
