@@ -1,9 +1,6 @@
 after_script: greenkeeper-lockfile-upload
 before_install: npm install npm@latest --global
 before_script: greenkeeper-lockfile-update
-cache:
-  directories:
-    - node_modules
 env:
   global:
     - secure: j3sWidFJORA5R4CEYrt/tRHzPk3nAbuufHa6KGkfewIMtE9PcHOoZwpotBwYsBhAa7m7+jNRGWs0M6kIAWmjb1pnbFV9vPkPQxi8wY4SM2pyPTADHtqKqN0LLaqbQr8mM00xIaMD4xo3CMBJc+k0kzgtO/Cq4p6Szqa1rMY87lM=
