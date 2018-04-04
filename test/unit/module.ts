@@ -2,6 +2,7 @@ import { Injector } from '@angular/core';
 import { TestBed, inject } from '@angular/core/testing';
 import {
     AudioContext as standardizedAudioContextAudioContext,
+    IAudioContext,
     isSupported as standardizedAudioContextIsSupported
 } from 'standardized-audio-context';
 import { AudioContext, AudioContextModule, isSupported as audioContextModuleIsSupported } from '../../src/module';
@@ -10,7 +11,7 @@ describe('module', () => {
 
     describe('forRoot()', () => {
 
-        let audioContext: AudioContext;
+        let audioContext: IAudioContext;
         let isSupported: () => Promise<boolean>;
 
         beforeEach(() => {
@@ -22,7 +23,7 @@ describe('module', () => {
         });
 
         beforeEach(inject([ Injector ], (injector: Injector) => {
-            audioContext = injector.get<AudioContext>(AudioContext);
+            audioContext = injector.get<IAudioContext>(AudioContext);
             isSupported = injector.get<() => Promise<boolean>>(audioContextModuleIsSupported);
         }));
 
