@@ -1,16 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { InjectionToken, ModuleWithProviders, NgModule } from '@angular/core';
-import {
-    AudioContext,
-    IAudioContext,
-    IAudioContextOptions,
-    isSupported as standardizedAudioContextModuleIsSupported
-} from 'standardized-audio-context';
+import { IAudioContext, IAudioContextOptions, isSupported as standardizedAudioContextModuleIsSupported } from 'standardized-audio-context';
 import { audioContextFactory } from './audio-context-factory';
+import { AudioContextProxy } from './audio-context-proxy';
 import { isSupportedFactory } from './is-supported-factory';
 import { latencyHintToken } from './latency-hint-token';
 
-export { AudioContext, IAudioContext, IAudioContextOptions };
+export { AudioContextProxy as AudioContext, IAudioContext, IAudioContextOptions };
 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
 
@@ -28,7 +24,7 @@ export class AudioContextModule {
         return {
             ngModule: AudioContextModule,
             providers: [
-                { deps: [ latencyHintToken ], provide: AudioContext, useFactory: audioContextFactory },
+                { deps: [ latencyHintToken ], provide: AudioContextProxy, useFactory: audioContextFactory },
                 { provide: latencyHintToken, useValue: latencyHint }
             ]
         };
