@@ -57,7 +57,7 @@
     "karma-sauce-launcher": "^1.2.0",
     "load-grunt-config": "^0.19.1",
     "rollup": "^0.58.2",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-babel": "^3.0.4",
     "tsconfig-holy-grail": "^4.0.8",
     "tslint": "^5.9.1",
     "tslint-config-holy-grail": "^25.0.0",
