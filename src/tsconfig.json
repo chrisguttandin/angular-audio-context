@@ -9,7 +9,7 @@
   "compilerOptions": {
     "declarationDir": "../build/es2015",
     "outDir": "../build/es2015",
-    "target": "es2015",
+    "target": "es2015"
   },
   "extends": "../node_modules/tsconfig-holy-grail/src/tsconfig-browser",
   "files": [
