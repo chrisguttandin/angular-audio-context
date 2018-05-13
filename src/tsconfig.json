@@ -1,5 +1,7 @@
 {
   "angularCompilerOptions": {
+    "flatModuleId": "angular-audio-context",
+    "flatModuleOutFile": "module.js",
     "genDir": "../build/es2015",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
@@ -7,7 +9,10 @@
   "compilerOptions": {
     "declarationDir": "../build/es2015",
     "outDir": "../build/es2015",
-    "target": "es5"
+    "target": "es2015",
   },
-  "extends": "../node_modules/tsconfig-holy-grail/src/tsconfig-browser"
+  "extends": "../node_modules/tsconfig-holy-grail/src/tsconfig-browser",
+  "files": [
+    "audio-context.module.ts"
+  ]
 }
