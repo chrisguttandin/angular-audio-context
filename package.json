@@ -79,6 +79,7 @@
       "jasmine-spec-reporter",
       "karma",
       "karma-chrome-launcher",
+      "karma-coverage-istanbul-reporter",
       "karma-jasmine",
       "tslint",
       "typescript"
