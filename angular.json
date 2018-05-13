@@ -1,0 +1,68 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "defaultProject": "angular-audio-context",
+    "newProjectRoot": "projects",
+    "projects": {
+        "angular-audio-context": {
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "configurations": { },
+                    "options": {
+                        "assets": [ ],
+                        "index": "src/index.html",
+                        "main": "src/module.ts",
+                        "outputPath": "build",
+                        "polyfills": "src/polyfills.ts",
+                        "scripts": [ ],
+                        "styles": [ ],
+                        "tsConfig": "src/tsconfig.json"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "exclude": [
+                            "**/node_modules/**"
+                        ],
+                        "tsConfig": "src/tsconfig.json",
+                        "tslintConfig": "config/tslint/src.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "assets": [ ],
+                        "karmaConfig": "config/karma/config.js",
+                        "main": "config/karma/test.ts",
+                        "polyfills": "src/polyfills.ts",
+                        "scripts": [ ],
+                        "styles": [ ],
+                        "tsConfig": "test/unit/tsconfig.json"
+                    }
+                }
+            },
+            "projectType": "application",
+            "root": "",
+            "schematics": { },
+            "sourceRoot": "src"
+        },
+        "angular-audio-context-unit": {
+            "architect": {
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "exclude": [
+                            "**/node_modules/**"
+                        ],
+                        "tsConfig": "test/unit/tsconfig.json",
+                        "tslintConfig": "config/tslint/test.json"
+                    }
+                }
+            },
+            "projectType": "application",
+            "root": "test/unit/"
+        }
+    },
+    "version": 1
+}

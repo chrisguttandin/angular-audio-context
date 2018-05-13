@@ -3,7 +3,6 @@
     "declaration": false,
     "module": "commonjs",
     "outDir": "../../out-tsc/spec",
-    "target": "es5",
     "types": [
       "jasmine",
       "node"
@@ -11,7 +10,8 @@
   },
   "extends": "../../node_modules/tsconfig-holy-grail/src/tsconfig-browser",
   "files": [
-    "../../config/karma/test.ts"
+    "../../config/karma/test.ts",
+    "../../src/polyfills.ts"
   ],
   "include": [
     "**/*.ts"

@@ -12,7 +12,7 @@ module.exports = {
         cmd: 'ng test'
     },
     'lint': {
-        cmd: 'ng lint --type-check'
+        cmd: 'ng lint angular-audio-context --type-check && ng lint angular-audio-context-unit --type-check'
     },
     'test': {
         cmd: 'ng test --watch false'
