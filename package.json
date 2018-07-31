@@ -13,7 +13,7 @@
     "@angular/core": "^6.1.0",
     "babel-runtime": "^6.26.0",
     "rxjs": "^6.2.2",
-    "standardized-audio-context": "^13.0.3",
+    "standardized-audio-context": "^13.0.4",
     "tslib": "^1.9.3",
     "zone.js": "^0.8.26"
   },
