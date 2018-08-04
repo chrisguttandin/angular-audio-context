@@ -59,7 +59,7 @@
     "load-grunt-config": "^0.19.1",
     "rollup": "^0.63.5",
     "rollup-plugin-babel": "^3.0.7",
-    "tsconfig-holy-grail": "^5.0.8",
+    "tsconfig-holy-grail": "^5.0.9",
     "tslint": "~5.10.0",
     "tslint-config-holy-grail": "^33.0.7",
     "typescript": "~2.9.2"
