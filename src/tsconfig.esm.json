@@ -9,6 +9,7 @@
   },
   "compilerOptions": {
     "declaration": false,
+    "declarationMap": false,
     "outDir": "../build/esm",
     "target": "es5"
   },

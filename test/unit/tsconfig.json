@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "declaration": false,
+    "declarationMap": false,
     "outDir": "../../out-tsc/spec",
     "types": [
       "jasmine",
