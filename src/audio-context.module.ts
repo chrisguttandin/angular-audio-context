@@ -20,6 +20,12 @@ export const isSupported = new InjectionToken<typeof standardizedAudioContextMod
 })
 export class AudioContextModule {
 
+    public static forChild (): ModuleWithProviders {
+        return {
+            ngModule: AudioContextModule
+        };
+    }
+
     public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders {
         return {
             ngModule: AudioContextModule,
@@ -27,12 +33,6 @@ export class AudioContextModule {
                 { deps: [ latencyHintToken ], provide: AudioContextProxy, useFactory: audioContextFactory },
                 { provide: latencyHintToken, useValue: latencyHint }
             ]
-        };
-    }
-
-    public static forChild (): ModuleWithProviders {
-        return {
-            ngModule: AudioContextModule
         };
     }
 
