@@ -4,7 +4,11 @@
     "newProjectRoot": "projects",
     "projects": {
         "angular-audio-context": {
-            "architect": {
+            "projectType": "application",
+            "root": "",
+            "schematics": { },
+            "sourceRoot": "src",
+            "targets": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "configurations": { },
@@ -41,14 +45,12 @@
                         "tsConfig": "test/unit/tsconfig.json"
                     }
                 }
-            },
-            "projectType": "application",
-            "root": "",
-            "schematics": { },
-            "sourceRoot": "src"
+            }
         },
         "angular-audio-context-unit": {
-            "architect": {
+            "projectType": "application",
+            "root": "test/unit/",
+            "targets": {
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
                     "options": {
@@ -59,9 +61,7 @@
                         "tslintConfig": "config/tslint/test.json"
                     }
                 }
-            },
-            "projectType": "application",
-            "root": "test/unit/"
+            }
         }
     },
     "version": 1
