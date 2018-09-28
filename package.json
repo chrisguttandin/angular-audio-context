@@ -88,6 +88,12 @@
     ]
   },
   "homepage": "https://github.com/chrisguttandin/angular-audio-context",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit --extends @commitlint/config-angular",
+      "pre-commit": "grunt lint"
+    }
+  },
   "license": "MIT",
   "main": "build/es5/bundle.js",
   "module": "build/esm/module.js",
@@ -97,8 +103,6 @@
     "url": "https://github.com/chrisguttandin/angular-audio-context.git"
   },
   "scripts": {
-    "commitmsg": "commitlint --edit --extends @commitlint/config-angular",
-    "precommit": "grunt lint",
     "prepublishOnly": "grunt build",
     "test": "grunt lint && grunt test"
   },
