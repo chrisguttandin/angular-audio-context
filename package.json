@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "rxjs": "~6.3.3",
     "standardized-audio-context": "^17.0.0",
     "tslib": "^1.9.3",
     "zone.js": "~0.8.26"
@@ -58,6 +57,7 @@
     "load-grunt-config": "^0.19.1",
     "rollup": "^0.66.6",
     "rollup-plugin-babel": "^4.0.3",
+    "rxjs": "^6.3.3",
     "tsconfig-holy-grail": "^7.0.5",
     "tslint": "~5.11.0",
     "tslint-config-holy-grail": "^36.0.5",
