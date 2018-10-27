@@ -9,7 +9,6 @@
     }
   },
   "dependencies": {
-    "@angular/core": "^7.0.1",
     "@babel/runtime": "^7.1.2",
     "rxjs": "~6.3.3",
     "standardized-audio-context": "^17.0.0",
@@ -23,6 +22,7 @@
     "@angular/common": "^7.0.1",
     "@angular/compiler": "^7.0.1",
     "@angular/compiler-cli": "^7.0.1",
+    "@angular/core": "^7.0.1",
     "@angular/language-service": "^7.0.1",
     "@angular/platform-browser": "^7.0.1",
     "@angular/platform-browser-dynamic": "^7.0.1",
