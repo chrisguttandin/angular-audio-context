@@ -54,7 +54,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-sauce-launcher": "^2.0.2",
     "load-grunt-config": "^1.0.1",
-    "rollup": "^0.68.1",
+    "rollup": "^0.68.2",
     "rollup-plugin-babel": "^4.1.0",
     "rxjs": "^6.3.3",
     "tsconfig-holy-grail": "^8.0.0",
