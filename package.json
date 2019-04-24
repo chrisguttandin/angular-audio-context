@@ -51,7 +51,7 @@
     "karma-coverage-istanbul-reporter": "~2.0.5",
     "karma-firefox-launcher": "~1.1.0",
     "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-jasmine-html-reporter": "^1.4.1",
     "karma-sauce-launcher": "^2.0.2",
     "load-grunt-config": "^1.0.1",
     "rollup": "^1.10.0",
