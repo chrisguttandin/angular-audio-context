@@ -88,6 +88,7 @@
       "karma-chrome-launcher",
       "karma-coverage-istanbul-reporter",
       "karma-jasmine",
+      "karma-jasmine-html-reporter",
       "rxjs",
       "tslint",
       "typescript",
