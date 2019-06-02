@@ -17,14 +17,14 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.1",
     "@angular/cli": "~8.0.1",
-    "@angular/common": "~7.2.15",
-    "@angular/compiler": "~7.2.15",
-    "@angular/compiler-cli": "~7.2.15",
-    "@angular/core": "~7.2.15",
-    "@angular/language-service": "~7.2.15",
-    "@angular/platform-browser": "~7.2.15",
-    "@angular/platform-browser-dynamic": "~7.2.15",
-    "@angular/router": "~7.2.15",
+    "@angular/common": "~8.0.0",
+    "@angular/compiler": "~8.0.0",
+    "@angular/compiler-cli": "~8.0.0",
+    "@angular/core": "~8.0.0",
+    "@angular/language-service": "~8.0.0",
+    "@angular/platform-browser": "~8.0.0",
+    "@angular/platform-browser-dynamic": "~8.0.0",
+    "@angular/router": "~8.0.0",
     "@babel/core": "^7.4.5",
     "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.4.4",
@@ -107,8 +107,8 @@
   "module": "build/es2018/module.js",
   "name": "angular-audio-context",
   "peerDependencies": {
-    "@angular/common": "^7.0.1",
-    "@angular/core": "^7.0.1"
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0"
   },
   "repository": {
     "type": "git",
