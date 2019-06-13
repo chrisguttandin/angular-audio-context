@@ -11,7 +11,7 @@
       "./omit"
     ]
   },
-  "extends": "../node_modules/tsconfig-holy-grail/src/tsconfig-browser",
+  "extends": "tsconfig-holy-grail/src/tsconfig-browser",
   "files": [
     "audio-context.module.ts"
   ]
