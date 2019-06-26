@@ -34,7 +34,7 @@ export class AppModule { }
 The `AudioContext` can then be injected into your components and services.
 
 ```typescript
-import { Inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { AudioContext } from 'angular-audio-context';
 
 @Injectable()
