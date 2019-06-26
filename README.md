@@ -69,6 +69,41 @@ export class AnyComponent {
 In case you are missing a feature or found a bug just fork this repository or raise an issue.
 Thanks.
 
+## Example
+
+The following component defintion shows how to implement a basic component which produces a beep each time the button inside the template gets clicked.
+
+```typescript
+import { Component } from '@angular/core';
+import { AudioContext } from 'angular-audio-context';
+
+@Component({
+    selector: 'my-beep',
+    template: '<button (click)="beep()">beep</button>'
+})
+export class BeepComponent {
+
+    constructor (
+        private _audioContext: AudioContext
+    ) { }
+
+    public async beep (): void {
+        if (this._audioContext.state === 'suspended') {
+            await this._audioContext.resume();
+        }
+
+        const oscillatorNode = this._audioContext.createOscillator();
+
+        oscillatorNode.onended = () => oscillatorNode.disconnect();
+        oscillatorNode.connect(this._audioContext.destination);
+
+        oscillatorNode.start();
+        oscillatorNode.stop(this._audioContext.currentTime + 0.5);
+    }
+
+}
+```
+
 ## Compatibility
 
 Up to [version 5](https://github.com/chrisguttandin/angular-audio-context/releases/tag/v5.0.0) this
