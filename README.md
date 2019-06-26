@@ -10,6 +10,8 @@ Besides being a wrapper this module also patches the deprecated and prefixed ver
 AudioContext which are out there. It uses the
 [standardized-audio-context](https://github.com/chrisguttandin/standardized-audio-context) to do so.
 
+## Usage
+
 This module can be installed via [npm](https://www.npmjs.com/package/angular-audio-context) like
 this:
 
@@ -67,11 +69,17 @@ export class AnyComponent {
 In case you are missing a feature or found a bug just fork this repository or raise an issue.
 Thanks.
 
+## Compatibility
+
 Up to [version 5](https://github.com/chrisguttandin/angular-audio-context/releases/tag/v5.0.0) this
 module was compatible with Angular 1.
 
+## Alternatives
+
 There is also module called [ngWebAudio](https://github.com/nehz/ngWebAudio) which tries to simplify
 the buffering and playback of a single audio file by utilizing the Web Audio API.
+
+## Acknowledgement
 
 The naming of this module tries to align with the recommendations given in the
 [Specification for reusable AngularJS components](https://github.com/angular/angular-component-spec).
