@@ -29,7 +29,7 @@
     "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.4",
-    "@commitlint/cli": "^8.0.0",
+    "@commitlint/cli": "^8.1.0",
     "@commitlint/config-angular": "^8.0.0",
     "@types/jasmine": "~3.3.13",
     "@types/jasminewd2": "~2.0.6",
