@@ -6,11 +6,6 @@
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
   },
-  "compilerOptions": {
-    "types": [
-      "./omit"
-    ]
-  },
   "extends": "tsconfig-holy-grail/src/tsconfig-browser",
   "files": [
     "audio-context.module.ts"

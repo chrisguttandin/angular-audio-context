@@ -5,8 +5,7 @@
     "outDir": "../../out-tsc/spec",
     "types": [
       "jasmine",
-      "node",
-      "../../src/omit"
+      "node"
     ]
   },
   "extends": "tsconfig-holy-grail/src/tsconfig-browser",
