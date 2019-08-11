@@ -101,6 +101,12 @@
       "pre-commit": "grunt lint"
     }
   },
+  "keywords": [
+    "Angular",
+    "Web Audio API",
+    "audio",
+    "ngx"
+  ],
   "license": "MIT",
   "main": "build/es5/bundle.js",
   "module": "build/es2018/module.js",
