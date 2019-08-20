@@ -25,6 +25,12 @@
                 },
                 "lint": {
                     "builder": "@angular-devkit/build-angular:tslint",
+                    "configurations": {
+                        "test": {
+                            "tsConfig": "test/unit/tsconfig.json",
+                            "tslintConfig": "config/tslint/test.json"
+                        }
+                    },
                     "options": {
                         "exclude": [
                             "**/node_modules/**"
@@ -43,22 +49,6 @@
                         "scripts": [ ],
                         "styles": [ ],
                         "tsConfig": "test/unit/tsconfig.json"
-                    }
-                }
-            }
-        },
-        "angular-audio-context-unit": {
-            "projectType": "application",
-            "root": "test/unit/",
-            "targets": {
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "exclude": [
-                            "**/node_modules/**"
-                        ],
-                        "tsConfig": "test/unit/tsconfig.json",
-                        "tslintConfig": "config/tslint/test.json"
                     }
                 }
             }
