@@ -55,7 +55,7 @@
     "load-grunt-config": "^3.0.0",
     "rollup": "^1.20.3",
     "rollup-plugin-babel": "^4.3.3",
-    "rxjs": "~6.5.2",
+    "rxjs": "~6.5.3",
     "tsconfig-holy-grail": "^10.0.12",
     "tslint": "~5.15.0",
     "tslint-config-holy-grail": "^45.0.0",
