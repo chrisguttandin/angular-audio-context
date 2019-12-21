@@ -123,5 +123,5 @@
     "test": "grunt lint && grunt test"
   },
   "types": "build/es2018/module.d.ts",
-  "version": "26.0.5"
+  "version": "26.0.6"
 }
