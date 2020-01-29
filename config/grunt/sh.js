@@ -12,7 +12,7 @@ module.exports = (grunt) => {
             cmd: 'ng test'
         },
         'lint-config': {
-            cmd: `eslint --config config/eslint/config.json ${ (fix) ? '--fix ' : '' }--report-unused-disable-directives *.js config/**/*.js`
+            cmd: `eslint --config config/eslint/config.json --ext .js ${ (fix) ? '--fix ' : '' }--report-unused-disable-directives *.js config/`
         },
         'lint-src': {
             cmd: 'ng lint angular-audio-context --type-check'
