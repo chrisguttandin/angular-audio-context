@@ -6,7 +6,7 @@ module.exports = (grunt) => {
             cmd: 'ngc -p src/tsconfig.json'
         },
         'build-es5': {
-            cmd: 'rollup -c config/rollup/bundle.js'
+            cmd: 'rollup --config config/rollup/bundle.js'
         },
         'continuous': {
             cmd: 'ng test'
