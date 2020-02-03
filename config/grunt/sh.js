@@ -2,7 +2,7 @@ module.exports = (grunt) => {
     const fix = (grunt.option('fix') === true);
 
     return {
-        'build-es2018': {
+        'build-es2019': {
             cmd: 'ngc -p src/tsconfig.json'
         },
         'build-es5': {

@@ -2,7 +2,7 @@
   "angularCompilerOptions": {
     "flatModuleId": "angular-audio-context",
     "flatModuleOutFile": "module.js",
-    "genDir": "../build/es2018",
+    "genDir": "../build/es2019",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true
   },

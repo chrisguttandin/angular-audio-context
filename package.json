@@ -63,7 +63,7 @@
     "zone.js": "~0.9.1"
   },
   "files": [
-    "build/es2018/",
+    "build/es2019/",
     "build/es5/",
     "src/"
   ],
@@ -108,7 +108,7 @@
   ],
   "license": "MIT",
   "main": "build/es5/bundle.js",
-  "module": "build/es2018/module.js",
+  "module": "build/es2019/module.js",
   "name": "angular-audio-context",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
@@ -122,6 +122,6 @@
     "prepublishOnly": "grunt build",
     "test": "grunt lint && grunt test"
   },
-  "types": "build/es2018/module.d.ts",
+  "types": "build/es2019/module.d.ts",
   "version": "26.0.10"
 }
