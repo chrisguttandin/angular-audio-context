@@ -60,7 +60,7 @@
     "tslint": "~5.15.0",
     "tslint-config-holy-grail": "^47.0.7",
     "typescript": "~3.5.3",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.10.2"
   },
   "files": [
     "build/es2019/",
