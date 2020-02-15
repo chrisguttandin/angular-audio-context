@@ -20,13 +20,13 @@ export const isSupported = new InjectionToken<typeof standardizedAudioContextMod
 })
 export class AudioContextModule {
 
-    public static forChild (): ModuleWithProviders {
+    public static forChild (): ModuleWithProviders<AudioContextModule> {
         return {
             ngModule: AudioContextModule
         };
     }
 
-    public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders {
+    public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders<AudioContextModule> {
         return {
             ngModule: AudioContextModule,
             providers: [
