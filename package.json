@@ -57,7 +57,7 @@
     "rollup": "^2.2.0",
     "rollup-plugin-babel": "^4.4.0",
     "rxjs": "~6.5.4",
-    "tsconfig-holy-grail": "^11.0.4",
+    "tsconfig-holy-grail": "^11.0.5",
     "tslint": "~5.18.0",
     "tslint-config-holy-grail": "^48.0.6",
     "typescript": "~3.7.5",
