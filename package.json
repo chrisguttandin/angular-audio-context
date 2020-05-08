@@ -75,7 +75,6 @@
       "@angular/compiler",
       "@angular/compiler-cli",
       "@angular/core",
-      "@angular/language-service",
       "@angular/platform-browser",
       "@angular/platform-browser-dynamic",
       "@angular/router",
