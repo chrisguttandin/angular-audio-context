@@ -33,7 +33,7 @@
     "@commitlint/config-angular": "^8.3.4",
     "@types/jasmine": "~3.5.10",
     "@types/jasminewd2": "~2.0.8",
-    "@types/node": "^12.12.39",
+    "@types/node": "^12.12.41",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.0.0",
