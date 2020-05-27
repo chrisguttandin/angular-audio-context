@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.10.0",
-    "standardized-audio-context": "^24.1.15",
+    "standardized-audio-context": "^24.1.16",
     "tslib": "^1.13.0"
   },
   "description": "An Angular wrapper for the Web Audio API's AudioContext.",
