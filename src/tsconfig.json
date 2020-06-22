@@ -1,13 +1,11 @@
 {
-  "angularCompilerOptions": {
-    "flatModuleId": "angular-audio-context",
-    "flatModuleOutFile": "module.js",
-    "genDir": "../build/es2019",
-    "skipTemplateCodegen": true,
-    "strictMetadataEmit": true
-  },
-  "extends": "tsconfig-holy-grail/src/tsconfig-browser",
-  "files": [
-    "audio-context.module.ts"
-  ]
+    "angularCompilerOptions": {
+        "flatModuleId": "angular-audio-context",
+        "flatModuleOutFile": "module.js",
+        "genDir": "../build/es2019",
+        "skipTemplateCodegen": true,
+        "strictMetadataEmit": true
+    },
+    "extends": "tsconfig-holy-grail/src/tsconfig-browser",
+    "files": ["audio-context.module.ts"]
 }

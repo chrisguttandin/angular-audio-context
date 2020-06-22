@@ -1,5 +1,5 @@
 module.exports = (grunt) => {
-    const fix = (grunt.option('fix') === true);
+    const fix = grunt.option('fix') === true;
 
     return {
         'build-es2019': {
@@ -12,7 +12,7 @@ module.exports = (grunt) => {
             cmd: 'ng test'
         },
         'lint-config': {
-            cmd: `eslint --config config/eslint/config.json --ext .js ${ (fix) ? '--fix ' : '' }--report-unused-disable-directives *.js config/`
+            cmd: `eslint --config config/eslint/config.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives *.js config/`
         },
         'lint-src': {
             cmd: 'ng lint angular-audio-context --type-check'

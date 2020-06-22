@@ -28,9 +28,7 @@
                         }
                     },
                     "options": {
-                        "exclude": [
-                            "**/node_modules/**"
-                        ],
+                        "exclude": ["**/node_modules/**"],
                         "tsConfig": "src/tsconfig.json",
                         "tslintConfig": "config/tslint/src.json"
                     }

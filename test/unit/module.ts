@@ -8,21 +8,17 @@ import {
 import { AudioContext, AudioContextModule, isSupported as audioContextModuleIsSupported } from '../../src/module';
 
 describe('module', () => {
-
     describe('forRoot()', () => {
-
         let audioContext: IAudioContext;
         let isSupported: () => Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [
-                    AudioContextModule.forRoot('balanced')
-                ]
+                imports: [AudioContextModule.forRoot('balanced')]
             });
         });
 
-        beforeEach(inject([ Injector ], (injector: Injector) => {
+        beforeEach(inject([Injector], (injector: Injector) => {
             audioContext = injector.get<IAudioContext>(AudioContext);
             isSupported = injector.get<() => Promise<boolean>>(audioContextModuleIsSupported);
         }));
@@ -34,29 +30,23 @@ describe('module', () => {
         it('should provide the isSupported() function from standardized-audio-context module', () => {
             expect(isSupported).toBe(standardizedAudioContextIsSupported);
         });
-
     });
 
     describe('forChild()', () => {
-
         let isSupported: () => Promise<boolean>;
 
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [
-                    AudioContextModule.forChild()
-                ]
+                imports: [AudioContextModule.forChild()]
             });
         });
 
-        beforeEach(inject([ Injector ], (injector: Injector) => {
+        beforeEach(inject([Injector], (injector: Injector) => {
             isSupported = injector.get(audioContextModuleIsSupported);
         }));
 
         it('should provide the isSupported() function from standardized-audio-context module', () => {
             expect(isSupported).toBe(standardizedAudioContextIsSupported);
         });
-
     });
-
 });

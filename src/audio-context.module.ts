@@ -11,29 +11,23 @@ export { AudioContextProxy as AudioContext, IAudioContext, IAudioContextOptions 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
-    providers: [
-        { provide: isSupported, useFactory: isSupportedFactory }
-    ]
+    imports: [CommonModule],
+    providers: [{ provide: isSupported, useFactory: isSupportedFactory }]
 })
 export class AudioContextModule {
-
-    public static forChild (): ModuleWithProviders<AudioContextModule> {
+    public static forChild(): ModuleWithProviders<AudioContextModule> {
         return {
             ngModule: AudioContextModule
         };
     }
 
-    public static forRoot (latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders<AudioContextModule> {
+    public static forRoot(latencyHint?: IAudioContextOptions['latencyHint']): ModuleWithProviders<AudioContextModule> {
         return {
             ngModule: AudioContextModule,
             providers: [
-                { deps: [ latencyHintToken ], provide: AudioContextProxy, useFactory: audioContextFactory },
+                { deps: [latencyHintToken], provide: AudioContextProxy, useFactory: audioContextFactory },
                 { provide: latencyHintToken, useValue: latencyHint }
             ]
         };
     }
-
 }

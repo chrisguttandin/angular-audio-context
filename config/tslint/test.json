@@ -2,6 +2,6 @@
     "extends": "tslint-config-holy-grail",
     "rules": {
         "newline-per-chained-call": false,
-        "no-implicit-dependencies": [ true, "dev" ]
+        "no-implicit-dependencies": [true, "dev"]
     }
 }

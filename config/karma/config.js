@@ -2,9 +2,7 @@ const { join } = require('path');
 const { env } = require('process');
 
 module.exports = (config) => {
-
     config.set({
-
         basePath: '../../',
 
         browserNoActivityTimeout: 300000,
@@ -18,27 +16,18 @@ module.exports = (config) => {
         coverageIstanbulReporter: {
             dir: join(__dirname, '../../coverage'),
             fixWebpackSourcePaths: true,
-            reports: [ 'html', 'lcovonly' ]
+            reports: ['html', 'lcovonly']
         },
 
-        frameworks: [
-            '@angular-devkit/build-angular',
-            'jasmine'
-        ],
+        frameworks: ['@angular-devkit/build-angular', 'jasmine'],
 
-        plugins: [
-            '@angular-devkit/build-angular/plugins/karma',
-            'karma-*'
-        ],
+        plugins: ['@angular-devkit/build-angular/plugins/karma', 'karma-*'],
 
-        reporters: [ 'progress', 'kjhtml' ]
-
+        reporters: ['progress', 'kjhtml']
     });
 
     if (env.TRAVIS) {
-
         config.set({
-
             browsers: [
                 /*
                  * @todo Enable all tests again.
@@ -79,22 +68,10 @@ module.exports = (config) => {
             },
 
             tunnelIdentifier: env.TRAVIS_JOB_NUMBER
-
         });
-
     } else {
-
         config.set({
-
-            browsers: [
-                'ChromeHeadless',
-                'ChromeCanaryHeadless',
-                'FirefoxHeadless',
-                'FirefoxDeveloperHeadless'
-            ]
-
+            browsers: ['ChromeHeadless', 'ChromeCanaryHeadless', 'FirefoxHeadless', 'FirefoxDeveloperHeadless']
         });
-
     }
-
 };

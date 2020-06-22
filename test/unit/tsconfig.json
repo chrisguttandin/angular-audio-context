@@ -1,19 +1,11 @@
 {
-  "compilerOptions": {
-    "declaration": false,
-    "declarationMap": false,
-    "outDir": "../../out-tsc/spec",
-    "types": [
-      "jasmine",
-      "node"
-    ]
-  },
-  "extends": "tsconfig-holy-grail/src/tsconfig-browser",
-  "files": [
-    "../../config/karma/test.ts",
-    "../../src/polyfills.ts"
-  ],
-  "include": [
-    "**/*.ts"
-  ]
+    "compilerOptions": {
+        "declaration": false,
+        "declarationMap": false,
+        "outDir": "../../out-tsc/spec",
+        "types": ["jasmine", "node"]
+    },
+    "extends": "tsconfig-holy-grail/src/tsconfig-browser",
+    "files": ["../../config/karma/test.ts", "../../src/polyfills.ts"],
+    "include": ["**/*.ts"]
 }
