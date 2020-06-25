@@ -61,7 +61,7 @@
         "rxjs": "~6.5.5",
         "tsconfig-holy-grail": "^11.0.16",
         "tslint": "~6.1.2",
-        "tslint-config-holy-grail": "^50.0.4",
+        "tslint-config-holy-grail": "^50.0.5",
         "typescript": "~3.8.3",
         "zone.js": "~0.10.3"
     },
