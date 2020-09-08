@@ -34,7 +34,7 @@
         "@types/jasmine": "~3.5.14",
         "@types/jasminewd2": "~2.0.8",
         "@types/node": "^12.12.56",
-        "commitizen": "^4.1.2",
+        "commitizen": "^4.2.1",
         "cz-conventional-changelog": "^3.2.0",
         "eslint": "^7.7.0",
         "eslint-config-holy-grail": "^48.0.0",
