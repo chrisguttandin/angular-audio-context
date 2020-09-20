@@ -5,6 +5,8 @@ module.exports = (config) => {
     config.set({
         basePath: '../../',
 
+        browserDisconnectTimeout: 20000,
+
         browserNoActivityTimeout: 300000,
 
         client: {
