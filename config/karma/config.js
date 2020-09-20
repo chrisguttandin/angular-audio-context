@@ -46,24 +46,24 @@ module.exports = (config) => {
                 ChromeCanarySauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'chrome',
-                    platform: 'OS X 10.11',
+                    platform: 'OS X 10.13',
                     version: 'dev'
                 },
                 ChromeSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'chrome',
-                    platform: 'OS X 10.11'
+                    platform: 'OS X 10.13'
                 },
                 FirefoxDeveloperSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'firefox',
-                    platform: 'OS X 10.11',
+                    platform: 'OS X 10.13',
                     version: 'dev'
                 },
                 FirefoxSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'firefox',
-                    platform: 'OS X 10.11'
+                    platform: 'OS X 10.13'
                 }
             },
 
