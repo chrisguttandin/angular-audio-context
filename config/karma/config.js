@@ -15,10 +15,10 @@ module.exports = (config) => {
 
         concurrency: 2,
 
-        coverageIstanbulReporter: {
+        coverageReporter: {
             dir: join(__dirname, '../../coverage'),
-            fixWebpackSourcePaths: true,
-            reports: ['html', 'lcovonly']
+            reporters: [{ type: 'html' }, { type: 'text-summary' }],
+            subdir: '.'
         },
 
         frameworks: ['@angular-devkit/build-angular', 'jasmine'],
