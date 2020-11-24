@@ -16,7 +16,7 @@ module.exports = (config) => {
         concurrency: 2,
 
         coverageReporter: {
-            dir: join(__dirname, '../../coverage'),
+            dir: join(__dirname, '../../coverage/angular-audio-context'),
             reporters: [{ type: 'html' }, { type: 'text-summary' }],
             subdir: '.'
         },
