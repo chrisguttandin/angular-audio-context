@@ -69,29 +69,6 @@
         "build/es5/",
         "src/"
     ],
-    "greenkeeper": {
-        "ignore": [
-            "@angular-devkit/build-angular",
-            "@angular/common",
-            "@angular/compiler",
-            "@angular/compiler-cli",
-            "@angular/core",
-            "@angular/platform-browser",
-            "@angular/platform-browser-dynamic",
-            "@angular/router",
-            "@types/jasmine",
-            "jasmine-core",
-            "jasmine-spec-reporter",
-            "karma",
-            "karma-chrome-launcher",
-            "karma-coverage",
-            "karma-jasmine",
-            "rxjs",
-            "tslint",
-            "typescript",
-            "zone.js"
-        ]
-    },
     "homepage": "https://github.com/chrisguttandin/angular-audio-context",
     "husky": {
         "hooks": {
