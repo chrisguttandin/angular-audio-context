@@ -9,19 +9,19 @@ module.exports = (grunt) => {
             cmd: 'rollup --config config/rollup/bundle.js'
         },
         'continuous': {
-            cmd: 'ng test'
+            cmd: 'npx ng test'
         },
         'lint-config': {
             cmd: `eslint --config config/eslint/config.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives *.js config/`
         },
         'lint-src': {
-            cmd: 'ng lint angular-audio-context --type-check'
+            cmd: 'npx ng lint angular-audio-context --type-check'
         },
         'lint-test': {
-            cmd: 'ng lint angular-audio-context --configuration test'
+            cmd: 'npx ng lint angular-audio-context --configuration test'
         },
         'test': {
-            cmd: 'ng test --watch false'
+            cmd: 'npx ng test --watch false'
         }
     };
 };
