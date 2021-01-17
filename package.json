@@ -34,7 +34,7 @@
         "@rollup/plugin-babel": "^5.2.2",
         "@types/jasmine": "~3.6.2",
         "@types/node": "^12.19.14",
-        "commitizen": "^4.2.2",
+        "commitizen": "^4.2.3",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^7.16.0",
         "eslint-config-holy-grail": "^48.0.4",
