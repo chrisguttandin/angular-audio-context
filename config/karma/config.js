@@ -5,15 +5,13 @@ module.exports = (config) => {
     config.set({
         basePath: '../../',
 
-        browserDisconnectTimeout: 20000,
+        browserDisconnectTimeout: 100000,
 
-        browserNoActivityTimeout: 300000,
+        browserNoActivityTimeout: 100000,
 
         client: {
             clearContext: false
         },
-
-        concurrency: 2,
 
         coverageReporter: {
             dir: join(__dirname, '../../coverage/angular-audio-context'),
@@ -25,55 +23,45 @@ module.exports = (config) => {
 
         plugins: ['@angular-devkit/build-angular/plugins/karma', 'karma-*'],
 
-        reporters: ['progress', 'kjhtml']
+        reporters: ['progress', 'kjhtml'],
+
+        restartOnFileChange: true
     });
 
-    if (env.TRAVIS) {
+    if (env.CI) {
         config.set({
-            browsers: [
-                /*
-                 * @todo Enable all tests again.
-                 * 'ChromeCanarySauceLabs',
-                 */
-                'ChromeSauceLabs'
-                /*
-                 * 'FirefoxDeveloperSauceLabs',
-                 * 'FirefoxSauceLabs'
-                 */
-            ],
+            browsers: ['ChromeSauceLabs', 'FirefoxSauceLabs', 'SafariSauceLabs'],
 
-            captureTimeout: 120000,
+            captureTimeout: 300000,
 
             customLaunchers: {
-                ChromeCanarySauceLabs: {
-                    base: 'SauceLabs',
-                    browserName: 'chrome',
-                    platform: 'OS X 10.15',
-                    version: 'dev'
-                },
                 ChromeSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'chrome',
-                    platform: 'OS X 10.15'
-                },
-                FirefoxDeveloperSauceLabs: {
-                    base: 'SauceLabs',
-                    browserName: 'firefox',
-                    platform: 'OS X 10.15',
-                    version: 'dev'
+                    captureTimeout: 300,
+                    platform: 'macOS 11.00'
                 },
                 FirefoxSauceLabs: {
                     base: 'SauceLabs',
                     browserName: 'firefox',
-                    platform: 'OS X 10.15'
+                    captureTimeout: 300,
+                    platform: 'macOS 11.00'
+                },
+                SafariSauceLabs: {
+                    base: 'SauceLabs',
+                    browserName: 'safari',
+                    captureTimeout: 300,
+                    platform: 'macOS 11.00'
                 }
             },
 
-            tunnelIdentifier: env.TRAVIS_JOB_NUMBER
+            sauceLabs: {
+                recordVideo: false
+            }
         });
     } else {
         config.set({
-            browsers: ['ChromeHeadless', 'ChromeCanaryHeadless', 'FirefoxHeadless', 'FirefoxDeveloperHeadless']
+            browsers: ['ChromeCanaryHeadless', 'ChromeHeadless', 'FirefoxDeveloperHeadless', 'FirefoxHeadless', 'Safari']
         });
     }
 };
