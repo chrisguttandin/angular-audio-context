@@ -21,6 +21,10 @@ module.exports = (config) => {
 
         frameworks: ['@angular-devkit/build-angular', 'jasmine'],
 
+        jasmineHtmlReporter: {
+            suppressAll: true
+        },
+
         plugins: ['@angular-devkit/build-angular/plugins/karma', 'karma-*'],
 
         reporters: ['progress', 'kjhtml'],
