@@ -58,7 +58,7 @@
         "prettier": "^2.2.1",
         "pretty-quick": "^3.1.0",
         "rollup": "^2.40.0",
-        "rxjs": "~6.6.3",
+        "rxjs": "~6.6.6",
         "tsconfig-holy-grail": "^11.0.46",
         "tslint": "~6.1.3",
         "tslint-config-holy-grail": "^53.2.4",
