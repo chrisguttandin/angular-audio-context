@@ -57,7 +57,7 @@
         "load-grunt-config": "^3.0.1",
         "prettier": "^2.2.1",
         "pretty-quick": "^3.1.0",
-        "rollup": "^2.39.1",
+        "rollup": "^2.40.0",
         "rxjs": "~6.6.3",
         "tsconfig-holy-grail": "^11.0.46",
         "tslint": "~6.1.3",
