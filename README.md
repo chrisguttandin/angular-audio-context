@@ -2,7 +2,6 @@
 
 **An Angular wrapper for the Web Audio API's AudioContext.**
 
-[![tests](https://img.shields.io/travis/chrisguttandin/angular-audio-context/master.svg?style=flat-square)](https://travis-ci.org/chrisguttandin/angular-audio-context)
 [![dependencies](https://img.shields.io/david/chrisguttandin/angular-audio-context.svg?style=flat-square)](https://www.npmjs.com/package/angular-audio-context)
 [![version](https://img.shields.io/npm/v/angular-audio-context.svg?style=flat-square)](https://www.npmjs.com/package/angular-audio-context)
 
@@ -26,11 +25,9 @@ imported into your Angular app as usual.
 import { AudioContextModule } from 'angular-audio-context';
 
 @NgModule({
-    imports: [
-        AudioContextModule.forRoot('balanced')
-    ]
+    imports: [AudioContextModule.forRoot('balanced')]
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 The `AudioContext` can then be injected into your components and services.
@@ -41,9 +38,7 @@ import { AudioContext } from 'angular-audio-context';
 
 @Injectable()
 export class AnyService {
-
-    constructor(private _audioContext: AudioContext) { }
-
+    constructor(private _audioContext: AudioContext) {}
 }
 ```
 
@@ -60,9 +55,7 @@ import { isSupported } from 'angular-audio-context';
     template: '<span *ngIf="this.isSupported() | async">Yeah, your browser is supported.</span>'
 })
 export class AnyComponent {
-
-    constructor(@Inject(isSupported) public isSupported) { }
-
+    constructor(@Inject(isSupported) public isSupported) {}
 }
 ```
 
@@ -82,12 +75,9 @@ import { AudioContext } from 'angular-audio-context';
     template: '<button (click)="beep()">beep</button>'
 })
 export class BeepComponent {
+    constructor(private _audioContext: AudioContext) {}
 
-    constructor (
-        private _audioContext: AudioContext
-    ) { }
-
-    public async beep (): void {
+    public async beep(): void {
         if (this._audioContext.state === 'suspended') {
             await this._audioContext.resume();
         }
@@ -100,7 +90,6 @@ export class BeepComponent {
         oscillatorNode.start();
         oscillatorNode.stop(this._audioContext.currentTime + 0.5);
     }
-
 }
 ```
 
