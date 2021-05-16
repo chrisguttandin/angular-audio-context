@@ -10,13 +10,19 @@
                     "configurations": {},
                     "options": {
                         "assets": [],
+                        "buildOptimizer": false,
+                        "extractLicenses": false,
                         "index": "src/index.html",
                         "main": "src/module.ts",
+                        "namedChunks": true,
+                        "optimization": false,
                         "outputPath": "build",
                         "polyfills": "src/polyfills.ts",
                         "scripts": [],
+                        "sourceMap": true,
                         "styles": [],
-                        "tsConfig": "src/tsconfig.json"
+                        "tsConfig": "src/tsconfig.json",
+                        "vendorChunk": true
                     }
                 },
                 "lint": {
@@ -28,7 +34,9 @@
                         }
                     },
                     "options": {
-                        "exclude": ["**/node_modules/**"],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ],
                         "tsConfig": "src/tsconfig.json",
                         "tslintConfig": "config/tslint/src.json"
                     }
