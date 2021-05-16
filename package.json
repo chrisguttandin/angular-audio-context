@@ -88,8 +88,8 @@
     "module": "build/es2019/module.js",
     "name": "angular-audio-context",
     "peerDependencies": {
-        "@angular/common": "^11.0.0",
-        "@angular/core": "^11.0.0"
+        "@angular/common": "^12.0.0",
+        "@angular/core": "^12.0.0"
     },
     "repository": {
         "type": "git",
