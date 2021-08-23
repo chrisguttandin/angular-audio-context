@@ -1,5 +1,5 @@
-import 'zone.js/testing'; // tslint:disable-line:no-submodule-imports ordered-imports
-import { getTestBed } from '@angular/core/testing'; // tslint:disable-line:ordered-imports
+import 'zone.js/testing';
+import { getTestBed } from '@angular/core/testing';
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 
 declare const require: {
