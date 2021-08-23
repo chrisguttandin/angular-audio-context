@@ -2,5 +2,17 @@
     "env": {
         "browser": true
     },
-    "extends": "eslint-config-holy-grail"
+    "extends": "eslint-config-holy-grail",
+    "overrides": [
+        {
+            "files": ["*.ts"],
+            "globals": {
+                "ngDevMode": "readonly"
+            },
+            "rules": {
+                "node/file-extension-in-import": "off",
+                "new-cap": "off"
+            }
+        }
+    ]
 }
