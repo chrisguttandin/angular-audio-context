@@ -17,7 +17,7 @@
     "devDependencies": {
         "@angular-devkit/build-angular": "~12.2.3",
         "@angular-eslint/builder": "^12.3.1",
-        "@angular/cli": "~12.2.2",
+        "@angular/cli": "~12.2.3",
         "@angular/common": "~12.2.2",
         "@angular/compiler": "~12.2.2",
         "@angular/compiler-cli": "~12.2.2",
