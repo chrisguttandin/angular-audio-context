@@ -34,7 +34,7 @@
         "@commitlint/config-angular": "^13.1.0",
         "@rollup/plugin-babel": "^5.3.0",
         "@types/jasmine": "~3.8.2",
-        "@types/node": "^12.20.25",
+        "@types/node": "^12.20.26",
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^7.32.0",
