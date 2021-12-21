@@ -2,6 +2,7 @@
     "compilerOptions": {
         "declaration": false,
         "declarationMap": false,
+        "lib": ["dom", "es2020"],
         "outDir": "../../out-tsc/spec",
         "types": ["jasmine", "node"]
     },
