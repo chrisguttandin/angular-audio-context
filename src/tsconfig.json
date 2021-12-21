@@ -3,6 +3,7 @@
         "flatModuleId": "angular-audio-context",
         "flatModuleOutFile": "module.js",
         "genDir": "../build/es2019",
+        "lib": ["lib.dom.d.ts", "lib.es2020.d.ts"],
         "skipTemplateCodegen": true,
         "strictMetadataEmit": true
     },
