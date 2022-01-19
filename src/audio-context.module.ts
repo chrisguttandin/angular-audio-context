@@ -6,6 +6,7 @@ import { AudioContextProxy } from './audio-context-proxy';
 import { isSupportedFactory } from './is-supported-factory';
 import { latencyHintToken } from './latency-hint-token';
 
+// eslint-disable-next-line unicorn/prefer-export-from
 export { AudioContextProxy as AudioContext, IAudioContext, IAudioContextOptions };
 
 export const isSupported = new InjectionToken<typeof standardizedAudioContextModuleIsSupported>('IS_SUPPORTED_PROMISE');
