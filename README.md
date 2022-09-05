@@ -2,7 +2,6 @@
 
 **An Angular wrapper for the Web Audio API's AudioContext.**
 
-[![dependencies](https://img.shields.io/david/chrisguttandin/angular-audio-context.svg?style=flat-square)](https://github.com/chrisguttandin/angular-audio-context/network/dependencies)
 [![version](https://img.shields.io/npm/v/angular-audio-context.svg?style=flat-square)](https://www.npmjs.com/package/angular-audio-context)
 
 Besides being a wrapper this module also patches the deprecated and prefixed versions of the
