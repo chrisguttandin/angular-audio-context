@@ -58,7 +58,7 @@ export class AnyComponent {
 }
 ```
 
-In case you are missing a feature or found a bug just fork this repository or raise an issue.
+In case you are missing a feature or found a bug please create a pull request or raise an issue.
 Thanks.
 
 ## Example
