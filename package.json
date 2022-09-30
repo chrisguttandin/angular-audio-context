@@ -59,7 +59,7 @@
         "rollup": "^2.79.1",
         "rxjs": "~7.5.7",
         "tsconfig-holy-grail": "^11.1.36",
-        "typescript": "~4.6.4",
+        "typescript": "~4.7.2",
         "zone.js": "~0.11.8"
     },
     "files": [
