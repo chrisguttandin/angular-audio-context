@@ -102,6 +102,8 @@ module was compatible with Angular 1.
 There is also module called [ngWebAudio](https://github.com/nehz/ngWebAudio) which tries to simplify
 the buffering and playback of a single audio file by utilizing the Web Audio API.
 
+[ng-web-apis/audio](https://github.com/ng-web-apis/audio) is a library which allows the Web Audio API to be used from within the templates.
+
 ## Acknowledgement
 
 The naming of this module tries to align with the recommendations given in the
