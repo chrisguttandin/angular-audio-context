@@ -1,12 +1,22 @@
 {
     "angularCompilerOptions": {
-        "flatModuleId": "angular-audio-context",
-        "flatModuleOutFile": "module.js",
-        "genDir": "../build/es2019",
-        "lib": ["lib.dom.d.ts", "lib.es2020.d.ts"],
-        "skipTemplateCodegen": true,
-        "strictMetadataEmit": true
+        "compilationMode": "partial",
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": true
+    },
+    "compilerOptions": {
+        "baseUrl": "./",
+        "declarationMap": false,
+        "downlevelIteration": true,
+        "lib": ["dom", "es2020"],
+        "module": "es2020",
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "useDefineForClassFields": false,
+        "useUnknownInCatchVariables": true
     },
     "extends": "tsconfig-holy-grail/src/tsconfig-browser",
-    "files": ["audio-context.module.ts"]
+    "files": ["module.ts"]
 }

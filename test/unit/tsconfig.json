@@ -1,12 +1,19 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
         "declaration": false,
         "declarationMap": false,
-        "lib": ["dom", "es2020"],
+        "downlevelIteration": true,
+        "lib": ["dom", "es2022"],
+        "module": "es2022",
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
         "outDir": "../../out-tsc/spec",
-        "types": ["jasmine", "node"]
+        "target": "es2022",
+        "types": ["jasmine"],
+        "useDefineForClassFields": false,
+        "useUnknownInCatchVariables": true
     },
     "extends": "tsconfig-holy-grail/src/tsconfig-browser",
-    "files": ["../../config/karma/test.ts", "../../src/polyfills.ts"],
     "include": ["**/*.ts"]
 }
