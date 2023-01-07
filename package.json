@@ -59,7 +59,7 @@
         "rxjs": "~7.5.7",
         "tsconfig-holy-grail": "^12.0.0",
         "typescript": "~4.8.4",
-        "zone.js": "~0.11.8"
+        "zone.js": "~0.12.0"
     },
     "files": [
         "build/es2019/",
