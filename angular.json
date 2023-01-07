@@ -1,11 +1,5 @@
 {
     "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-    "cli": {
-        "cache": {
-            "enabled": true,
-            "environment": "all"
-        }
-    },
     "defaultProject": "angular-audio-context",
     "newProjectRoot": "projects",
     "projects": {
@@ -23,7 +17,7 @@
                         "namedChunks": true,
                         "optimization": false,
                         "outputPath": "build",
-                        "polyfills": "src/polyfills.ts",
+                        "polyfills": ["zone.js"],
                         "scripts": [],
                         "sourceMap": true,
                         "styles": [],
@@ -48,9 +42,9 @@
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
                         "assets": [],
+                        "include": ["../test/unit/**/*.ts"],
                         "karmaConfig": "config/karma/config.js",
-                        "main": "config/karma/test.ts",
-                        "polyfills": "src/polyfills.ts",
+                        "polyfills": ["zone.js", "zone.js/testing"],
                         "scripts": [],
                         "styles": [],
                         "tsConfig": "test/unit/tsconfig.json"
