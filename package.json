@@ -17,7 +17,7 @@
     "devDependencies": {
         "@angular-devkit/build-angular": "^15.1.0",
         "@angular-eslint/builder": "^15.1.0",
-        "@angular/cli": "^15.1.0",
+        "@angular/cli": "^15.1.1",
         "@angular/common": "^15.1.0",
         "@angular/compiler": "^15.1.0",
         "@angular/compiler-cli": "^15.1.0",
