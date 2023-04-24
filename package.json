@@ -53,7 +53,7 @@
         "karma-sauce-launcher": "^4.3.6",
         "karma-webkit-launcher": "^2.1.0",
         "load-grunt-config": "^4.0.1",
-        "prettier": "^2.8.7",
+        "prettier": "^2.8.8",
         "pretty-quick": "^3.1.3",
         "rollup": "^3.20.6",
         "rxjs": "~7.8.0",
