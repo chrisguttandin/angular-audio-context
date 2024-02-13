@@ -10,7 +10,19 @@
     "overrides": [
         {
             "files": ["*.ts"],
+            "parserOptions": {
+                "project": true
+            },
             "rules": {
+                "check-file/filename-naming-convention": [
+                    "error",
+                    {
+                        "**/*.ts": "KEBAB_CASE"
+                    },
+                    {
+                        "ignoreMiddleExtensions": true
+                    }
+                ],
                 "import/no-internal-modules": "off",
                 "rxjs/suffix-subjects": "off"
             }
