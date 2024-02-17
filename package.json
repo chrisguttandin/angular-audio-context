@@ -25,7 +25,7 @@
         "@angular/platform-browser": "^17.2.1",
         "@angular/platform-browser-dynamic": "^17.2.1",
         "@angular/router": "^17.2.1",
-        "@babel/core": "7.22.5",
+        "@babel/core": "7.23.9",
         "@babel/plugin-external-helpers": "^7.23.3",
         "@babel/plugin-transform-runtime": "7.22.5",
         "@babel/preset-env": "7.22.5",
