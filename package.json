@@ -57,7 +57,7 @@
         "prettier": "^3.2.5",
         "rollup": "^4.13.2",
         "rxjs": "~7.8.1",
-        "tsconfig-holy-grail": "^15.0.0",
+        "tsconfig-holy-grail": "^15.0.1",
         "typescript": "~5.3.3",
         "zone.js": "^0.14.4"
     },
