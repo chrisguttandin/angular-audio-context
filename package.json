@@ -55,7 +55,7 @@
         "lint-staged": "^15.2.2",
         "load-grunt-config": "^4.0.1",
         "prettier": "^3.2.5",
-        "rollup": "^4.14.2",
+        "rollup": "^4.14.3",
         "rxjs": "~7.8.1",
         "tsconfig-holy-grail": "^15.0.1",
         "typescript": "~5.4.5",
