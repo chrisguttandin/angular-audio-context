@@ -54,7 +54,7 @@
         "karma-webkit-launcher": "^2.4.0",
         "lint-staged": "^15.2.7",
         "load-grunt-config": "^4.0.1",
-        "prettier": "^3.2.5",
+        "prettier": "^3.3.2",
         "rollup": "^4.17.2",
         "rxjs": "~7.8.1",
         "tsconfig-holy-grail": "^15.0.1",
