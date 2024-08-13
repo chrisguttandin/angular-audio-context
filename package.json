@@ -52,7 +52,7 @@
         "karma-jasmine-html-reporter": "~2.1.0",
         "karma-sauce-launcher": "^4.3.6",
         "karma-webkit-launcher": "^2.6.0",
-        "lint-staged": "^15.2.7",
+        "lint-staged": "^15.2.9",
         "load-grunt-config": "^4.0.1",
         "prettier": "^3.3.3",
         "rollup": "^4.18.1",
