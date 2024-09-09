@@ -86,7 +86,7 @@
         "url": "https://github.com/chrisguttandin/angular-audio-context.git"
     },
     "scripts": {
-        "prepare": "husky install",
+        "prepare": "husky",
         "prepublishOnly": "grunt build",
         "test": "grunt lint && grunt test"
     },
