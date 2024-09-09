@@ -42,7 +42,7 @@
         "grunt-contrib-clean": "^2.0.1",
         "grunt-contrib-copy": "^1.0.0",
         "grunt-sh": "^0.2.1",
-        "husky": "^8.0.3",
+        "husky": "^9.1.5",
         "jasmine-core": "~5.1.2",
         "karma": "~6.4.4",
         "karma-chrome-launcher": "~3.2.0",
