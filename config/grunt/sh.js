@@ -20,6 +20,12 @@ module.exports = (grunt) => {
         'lint-test': {
             cmd: 'npx ng lint angular-audio-context --configuration test'
         },
+        'rimraf-build': {
+            cmd: 'rimraf build/*'
+        },
+        'rimraf-src': {
+            cmd: 'rimraf build/es2019/src'
+        },
         'test': {
             cmd: 'npx ng test --watch false'
         }
