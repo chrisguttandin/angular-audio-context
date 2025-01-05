@@ -32,7 +32,7 @@
         "@commitlint/cli": "^19.6.1",
         "@commitlint/config-angular": "^19.7.0",
         "@rollup/plugin-babel": "^6.0.4",
-        "@types/jasmine": "~5.1.4",
+        "@types/jasmine": "~5.1.5",
         "commitizen": "^4.3.1",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.57.0",
