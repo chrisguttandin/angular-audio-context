@@ -27,7 +27,7 @@
         "@angular/router": "^18.2.12",
         "@babel/core": "7.25.2",
         "@babel/plugin-external-helpers": "^7.25.9",
-        "@babel/plugin-transform-runtime": "7.23.9",
+        "@babel/plugin-transform-runtime": "7.24.7",
         "@babel/preset-env": "7.23.9",
         "@commitlint/cli": "^19.6.0",
         "@commitlint/config-angular": "^19.6.0",
