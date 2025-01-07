@@ -55,7 +55,7 @@
         "load-grunt-config": "^4.0.1",
         "prettier": "^3.4.2",
         "rimraf": "^6.0.1",
-        "rollup": "^4.29.1",
+        "rollup": "^4.30.0",
         "rxjs": "~7.8.1",
         "tsconfig-holy-grail": "^15.0.2",
         "typescript": "~5.5.2",
