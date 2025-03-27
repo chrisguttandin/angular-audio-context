@@ -86,9 +86,13 @@
         "url": "https://github.com/chrisguttandin/angular-audio-context.git"
     },
     "scripts": {
+        "lint": "npm run lint:config && npm run lint:src && npm run lint:test",
+        "lint:config": "eslint --config config/eslint/config.json --ext .cjs --ext .js --ext .mjs --report-unused-disable-directives config/",
+        "lint:src": "npx ng lint angular-audio-context",
+        "lint:test": "npx ng lint angular-audio-context --configuration test",
         "prepare": "husky",
         "prepublishOnly": "grunt build",
-        "test": "grunt lint && grunt test"
+        "test": "npm run lint && grunt test"
     },
     "types": "build/es2019/module.d.ts",
     "version": "38.0.3"
