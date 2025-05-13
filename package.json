@@ -93,5 +93,5 @@
         "test:unit": "npx ng test --watch false"
     },
     "types": "build/es2019/module.d.ts",
-    "version": "38.0.5"
+    "version": "38.0.6"
 }
