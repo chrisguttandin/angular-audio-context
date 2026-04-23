@@ -48,7 +48,7 @@
         "karma-sauce-launcher": "^4.3.6",
         "karma-webkit-launcher": "^2.6.0",
         "lint-staged": "^16.4.0",
-        "prettier": "^3.8.1",
+        "prettier": "^3.8.3",
         "rimraf": "^6.1.3",
         "rollup": "^4.60.1",
         "rxjs": "~7.8.2",
