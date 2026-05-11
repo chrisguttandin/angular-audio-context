@@ -9,7 +9,9 @@
             "architect": {
                 "build": {
                     "builder": "@angular/build:application",
-                    "configurations": {},
+                    "configurations": {
+                        "development": {}
+                    },
                     "options": {
                         "assets": [],
                         "browser": "src/module.ts",
@@ -39,14 +41,11 @@
                     }
                 },
                 "test": {
-                    "builder": "@angular/build:karma",
+                    "builder": "@angular/build:unit-test",
                     "options": {
-                        "assets": [],
+                        "browsers": ["chrome"],
+                        "headless": true,
                         "include": ["../test/unit/**/*.ts"],
-                        "karmaConfig": "config/karma/config.js",
-                        "polyfills": ["zone.js", "zone.js/testing"],
-                        "scripts": [],
-                        "styles": [],
                         "tsConfig": "test/unit/tsconfig.json"
                     }
                 }

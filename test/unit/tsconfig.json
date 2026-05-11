@@ -11,7 +11,6 @@
         "noPropertyAccessFromIndexSignature": true,
         "outDir": "../../out-tsc/spec",
         "target": "es2022",
-        "types": ["jasmine"],
         "useDefineForClassFields": false,
         "useUnknownInCatchVariables": true
     },

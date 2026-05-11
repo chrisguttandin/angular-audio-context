@@ -5,6 +5,7 @@ import {
     IAudioContext,
     isSupported as standardizedAudioContextIsSupported
 } from 'standardized-audio-context';
+import { beforeEach, describe, expect, it } from 'vitest';
 import { AudioContext, AudioContextModule, isSupported as audioContextModuleIsSupported } from '../../src/module';
 
 describe('module', () => {
