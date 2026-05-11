@@ -82,7 +82,10 @@
         "prepare": "husky",
         "prepublishOnly": "npm run build",
         "test": "npm run lint && npm run test:unit",
-        "test:unit": "npx ng test --watch false"
+        "test:unit": "npm run test:unit-chrome && npm run test:unit-firefox && npm run test:unit-safari",
+        "test:unit-chrome": "if [ \"$TYPE\" = \"\" -o \"$TYPE\" = \"unit\" ] && [ \"$TARGET\" = \"\" -o \"$TARGET\" = \"chrome\" ]; then npx ng test --browsers chrome --headless true --watch false; fi",
+        "test:unit-firefox": "if [ \"$TYPE\" = \"\" -o \"$TYPE\" = \"unit\" ] && [ \"$TARGET\" = \"\" -o \"$TARGET\" = \"firefox\" ]; then npx ng test --browsers firefox --headless true --watch false; fi",
+        "test:unit-safari": "if [ \"$TYPE\" = \"\" -o \"$TYPE\" = \"unit\" ] && [ \"$TARGET\" = \"\" -o \"$TARGET\" = \"safari\" ]; then npx ng test --browsers safari --headless false --watch false; fi"
     },
     "types": "build/es2019/module.d.ts",
     "version": "40.0.0"

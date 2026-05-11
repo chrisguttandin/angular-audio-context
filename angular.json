@@ -43,8 +43,6 @@
                 "test": {
                     "builder": "@angular/build:unit-test",
                     "options": {
-                        "browsers": ["chrome"],
-                        "headless": true,
                         "include": ["../test/unit/**/*.ts"],
                         "tsConfig": "test/unit/tsconfig.json"
                     }
