@@ -15,7 +15,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [20.x]
-                target: [chrome, safari]
+                target: [chrome, firefox, safari]
                 type: [unit]
             max-parallel: 3
 
@@ -40,8 +40,6 @@ jobs:
               run: npm ci
 
             - env:
-                  SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-                  SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
                   TARGET: ${{ matrix.target }}
                   TYPE: ${{ matrix.type }}
               name: Run ${{ matrix.type }} tests
