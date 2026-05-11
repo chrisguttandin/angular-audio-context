@@ -19,13 +19,13 @@ module.exports = (config) => {
             subdir: '.'
         },
 
-        frameworks: ['@angular-devkit/build-angular', 'jasmine'],
+        frameworks: ['jasmine'],
 
         jasmineHtmlReporter: {
             suppressAll: true
         },
 
-        plugins: ['@angular-devkit/build-angular/plugins/karma', 'karma-*'],
+        plugins: ['karma-*'],
 
         reporters: ['progress', 'kjhtml'],
 
@@ -38,10 +38,10 @@ module.exports = (config) => {
                 env.TARGET === 'chrome'
                     ? ['ChromeSauceLabs']
                     : env.TARGET === 'firefox'
-                    ? ['FirefoxSauceLabs']
-                    : env.TARGET === 'safari'
-                    ? ['SafariSauceLabs']
-                    : ['ChromeSauceLabs', 'FirefoxSauceLabs', 'SafariSauceLabs'],
+                      ? ['FirefoxSauceLabs']
+                      : env.TARGET === 'safari'
+                        ? ['SafariSauceLabs']
+                        : ['ChromeSauceLabs', 'FirefoxSauceLabs', 'SafariSauceLabs'],
 
             captureTimeout: 300000,
 

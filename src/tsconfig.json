@@ -12,6 +12,7 @@
         "downlevelIteration": true,
         "lib": ["dom", "es2020"],
         "module": "es2020",
+        "moduleResolution": "bundler",
         "noImplicitOverride": true,
         "noPropertyAccessFromIndexSignature": true,
         "useDefineForClassFields": false,

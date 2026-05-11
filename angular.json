@@ -8,14 +8,13 @@
         "angular-audio-context": {
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-angular:browser",
+                    "builder": "@angular/build:application",
                     "configurations": {},
                     "options": {
                         "assets": [],
-                        "buildOptimizer": false,
+                        "browser": "src/module.ts",
                         "extractLicenses": false,
                         "index": "src/index.html",
-                        "main": "src/module.ts",
                         "namedChunks": true,
                         "optimization": false,
                         "outputPath": "build",
@@ -23,8 +22,7 @@
                         "scripts": [],
                         "sourceMap": true,
                         "styles": [],
-                        "tsConfig": "src/tsconfig.json",
-                        "vendorChunk": true
+                        "tsConfig": "src/tsconfig.json"
                     }
                 },
                 "lint": {
@@ -41,7 +39,7 @@
                     }
                 },
                 "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
+                    "builder": "@angular/build:karma",
                     "options": {
                         "assets": [],
                         "include": ["../test/unit/**/*.ts"],

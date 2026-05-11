@@ -6,6 +6,7 @@
         "downlevelIteration": true,
         "lib": ["dom", "es2022"],
         "module": "es2022",
+        "moduleResolution": "bundler",
         "noImplicitOverride": true,
         "noPropertyAccessFromIndexSignature": true,
         "outDir": "../../out-tsc/spec",
