@@ -17,7 +17,7 @@
     "devDependencies": {
         "@angular-eslint/builder": "^21.3.1",
         "@angular/build": "^21.2.9",
-        "@angular/cli": "^21.2.9",
+        "@angular/cli": "^21.2.10",
         "@angular/common": "^21.2.11",
         "@angular/compiler": "^21.2.11",
         "@angular/compiler-cli": "^21.2.11",
