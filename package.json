@@ -45,7 +45,7 @@
         "rxjs": "~7.8.2",
         "tsconfig-holy-grail": "^16.0.0",
         "typescript": "~5.9.3",
-        "vitest": "^4.1.6",
+        "vitest": "^4.1.7",
         "zone.js": "^0.16.2"
     },
     "files": [
