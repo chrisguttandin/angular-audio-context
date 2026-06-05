@@ -89,5 +89,5 @@
         "test:unit-safari": "if [ \"$TYPE\" = \"\" -o \"$TYPE\" = \"unit\" ] && [ \"$TARGET\" = \"\" -o \"$TARGET\" = \"safari\" ]; then npx ng test --browsers safari --headless false --watch false; fi"
     },
     "types": "build/es2019/module.d.ts",
-    "version": "40.0.2"
+    "version": "40.0.3"
 }
