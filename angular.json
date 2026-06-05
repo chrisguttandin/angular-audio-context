@@ -31,12 +31,12 @@
                     "builder": "@angular-eslint/builder:lint",
                     "configurations": {
                         "test": {
-                            "eslintConfig": "config/eslint/test.json",
+                            "eslintConfig": "config/eslint/test.eslint.config.mjs",
                             "lintFilePatterns": ["test/**/*.html", "test/**/*.ts"]
                         }
                     },
                     "options": {
-                        "eslintConfig": "config/eslint/src.json",
+                        "eslintConfig": "config/eslint/src.eslint.config.mjs",
                         "lintFilePatterns": ["src/**/*.html", "src/**/*.ts"]
                     }
                 },

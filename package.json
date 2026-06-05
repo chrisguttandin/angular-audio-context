@@ -77,7 +77,7 @@
         "build": "rimraf build/* && ngc -p src/tsconfig.json && rollup --config config/rollup/bundle.mjs",
         "continuous": "npx ng test",
         "lint": "npm run lint:config && npm run lint:src && npm run lint:test",
-        "lint:config": "eslint --config config/eslint/config.json --ext .cjs --ext .js --ext .mjs --report-unused-disable-directives config/",
+        "lint:config": "eslint --config config/eslint/config.mjs --ext .cjs --ext .js --ext .mjs --report-unused-disable-directives config/",
         "lint:src": "npx ng lint angular-audio-context",
         "lint:test": "npx ng lint angular-audio-context --configuration test",
         "prepare": "husky",
