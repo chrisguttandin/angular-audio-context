@@ -65,6 +65,7 @@
     "main": "build/es5/bundle.js",
     "module": "build/es2019/module.js",
     "name": "angular-audio-context",
+    "packageManager": "npm@12",
     "peerDependencies": {
         "@angular/common": "^21.2.11",
         "@angular/core": "^21.2.11"
