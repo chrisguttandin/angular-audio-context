@@ -47,7 +47,7 @@
         "tsconfig-holy-grail": "^16.0.0",
         "typescript": "~5.9.3",
         "vitest": "^4.1.11",
-        "zone.js": "^0.16.2"
+        "zone.js": "^0.16.3"
     },
     "files": [
         "build/es2019/",
