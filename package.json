@@ -42,7 +42,7 @@
         "lint-staged": "^17.6.1",
         "prettier": "^3.10.1",
         "rimraf": "^6.1.4",
-        "rollup": "^4.67.2",
+        "rollup": "^4.68.5",
         "rxjs": "~7.8.2",
         "tsconfig-holy-grail": "^16.0.0",
         "typescript": "~5.9.3",
